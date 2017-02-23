@@ -1,0 +1,1866 @@
+{
+  "links": {},
+  "type": "SEARCH-ONLINE",
+  "data": {
+    "totalRecords": "10000",
+    "resultCount": 0,
+    "nextPosition": 0,
+    "data": [{
+      "position": "1",
+      "leader": "01428cam a2200313 a 4500",
+      "controlField": {
+        "001": "2",
+        "005": "20060629073726.0",
+        "007": "cr |||||||||||",
+        "008": "990629s1900    maua          000 1 eng"
+      },
+      "dataField": {
+        "100": {
+          "a": "London, Jack,",
+          "d": "1876-1916."
+        },
+        "245": {
+          "a": "The son of the wolf :",
+          "b": "tales of the far North /",
+          "c": "by Jack London."
+        },
+        "246": {},
+        "260": {
+          "a": "Boston :",
+          "b": "Houghton, Mifflin,",
+          "c": "1900."
+        },
+        "300": {
+          "a": "251 p. :",
+          "b": "1 ill. ;",
+          "c": "20 cm."
+        },
+        "500": {},
+        "505": {},
+        "530": {},
+        "856": {
+          "d": "mtfrb",
+          "f": "02266",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.02266"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "u",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "NEW INPUT vj36 06-29-99",
+          "e": "vj05 2002-04-03"
+        },
+        "984": {},
+        "985": {
+          "a": "pmpull",
+          "e": "intldl"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "PZ3.L846",
+          "b": "So"
+        },
+        "051": {
+          "a": "PS3523.O46",
+          "b": "S72 1900"
+        }
+      }
+    }, {
+      "position": "2",
+      "leader": "02910cam a22004815a 4500",
+      "controlField": {
+        "001": "4",
+        "005": "20130920181215.0",
+        "007": "cr |||||||||||",
+        "008": "990630s1814    paub          000 0aeng"
+      },
+      "dataField": {
+        "100": {
+          "a": "Lewis, Meriwether,",
+          "d": "1774-1809."
+        },
+        "240": {},
+        "245": {
+          "a": "History of the expedition under the command of Captains Lewis and Clark, to the sources of the Missouri, thence across the Rocky Mountains and down the river Columbia to the Pacific Ocean :",
+          "b": "performed during the years 1804-5-6 by order of the government of the United States /",
+          "c": "prepared for the press by Paul Allen ; in two volumes."
+        },
+        "260": {
+          "a": "New York :",
+          "b": "Abm. H. Inskeep,",
+          "c": "1814."
+        },
+        "300": {
+          "a": "2 v. :",
+          "b": "maps ;",
+          "c": "22 cm."
+        },
+        "500": {},
+        "501": {
+          "5": "DLC",
+          "a": "With : Life of Captain Lewis"
+        },
+        "505": {},
+        "510": {
+          "a": "Shaw & Shoemaker",
+          "c": "31924"
+        },
+        "530": {},
+        "600": {
+          "a": "Clark, William,",
+          "d": "1770-1838",
+          "x": "Travel",
+          "z": "West (U.S.)"
+        },
+        "611": {
+          "a": "Lewis and Clark Expedition",
+          "d": "(1804-1806)"
+        },
+        "651": {
+          "a": "West (U.S.)",
+          "x": "History",
+          "y": "To 1848."
+        },
+        "700": {
+          "a": "Allen, Paul,",
+          "d": "1775-1826."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Thomas Jefferson Library Collection (Library of Congress)"
+        },
+        "856": {
+          "3": "Volume 2",
+          "d": "mtfrb",
+          "f": "01477a",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.01477a"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "ibc",
+          "c": "premver",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "NEW INPUT vj36 06-30-99",
+          "i": "vj36 2002-09-06",
+          "e": "vj36 2002-09-06"
+        },
+        "984": {},
+        "985": {
+          "a": "rbc",
+          "e": "wdl"
+        },
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "F592.4",
+          "b": "1814"
+        }
+      }
+    }, {
+      "position": "3",
+      "leader": "01774cam a22003851  4500",
+      "controlField": {
+        "001": "12",
+        "005": "20060629073902.0",
+        "007": "cr |||||||||||",
+        "008": "990716s1793    ru            000 0ager"
+      },
+      "dataField": {
+        "100": {
+          "a": "Steller, Georg Wilhelm,",
+          "d": "1709-1746."
+        },
+        "245": {
+          "a": "G.W. Steller's ... Reise von Kamtschatka nach Amerika mit dem Commandeur-Capitån Bering :",
+          "b": "ein Pendant zu dessen Beschreibung von Kamtschatka."
+        },
+        "246": {},
+        "260": {
+          "a": "St. Petersburg :",
+          "b": "bey Johann Zacharias Logan,",
+          "c": "1793."
+        },
+        "300": {
+          "a": "[2], 133, [1] p. ;",
+          "c": "21 cm. (8vo)"
+        },
+        "500": {},
+        "530": {},
+        "561": {
+          "5": "DLC",
+          "a": "LC copy has armorial bookplate: Ex libris E.F. Nolte M.D."
+        },
+        "600": {
+          "a": "Bering, Vitus Jonassen,",
+          "d": "1681-1741."
+        },
+        "650": {
+          "a": "Voyages and travels",
+          "v": "Early works to 1800."
+        },
+        "651": {
+          "a": "Alaska",
+          "x": "Discovery and exploration",
+          "v": "Early works to 1800."
+        },
+        "752": {
+          "a": "Russia",
+          "d": "Saint Petersburg."
+        },
+        "856": {
+          "d": "mtfrb",
+          "f": "13934",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.13934"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "955": {},
+        "985": {
+          "a": "pmpull",
+          "e": "intldl"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "e": "dcrb",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "G296.B4",
+          "b": "S8"
+        }
+      }
+    }, {
+      "position": "4",
+      "leader": "02988cam a2200493 a 4500",
+      "controlField": {
+        "001": "22",
+        "005": "20120109174344.0",
+        "007": "cr_|||||||||||",
+        "008": "930621s1869    ctua          000 1 eng"
+      },
+      "dataField": {
+        "100": {
+          "a": "Twain, Mark,",
+          "d": "1835-1910."
+        },
+        "245": {
+          "a": "The innocents abroad, or, The new pilgrim's progress :",
+          "b": "being some account of the steamship Quaker City's pleasure excursion to Europe and the Holy Land, with descriptions of the countries, nations, incidents, and adventures as they appeared to the author : with two hundred and thirty-four illustrations /",
+          "c": "by Mark Twain (Samuel L. Clemens)."
+        },
+        "260": {
+          "a": "Hartford :",
+          "b": "American Pub. Co. ... [and 5 others] : San Francisco, Cal. : H. H. Bancroft and Co.,",
+          "c": "1869."
+        },
+        "300": {
+          "a": "651, [5] p. :",
+          "b": "ill. ;",
+          "c": "23 cm."
+        },
+        "500": {
+          "5": "DLC",
+          "a": "Source: Gift of Frances R. Friedman, June 15, 1992."
+        },
+        "510": {
+          "a": "BAL",
+          "c": "3316"
+        },
+        "530": {},
+        "651": {
+          "a": "Europe",
+          "x": "Description and travel."
+        },
+        "700": {
+          "5": "DLC",
+          "a": "Smith, Harry B.",
+          "q": "(Harry Bache),",
+          "d": "1860-1936,",
+          "e": "former owner."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Herman Finkelstein Collection (Library of Congress)"
+        },
+        "740": {},
+        "856": {},
+        "906": {
+          "a": "0",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "922": {},
+        "952": {},
+        "955": {},
+        "985": {
+          "a": "rarebk/fri",
+          "e": "rbc"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "043": {
+          "a": "e------"
+        },
+        "050": {
+          "a": "PS1312.",
+          "b": "A1 1869",
+          "u": "<Rare Bk Coll : Friedman Twain Coll>"
+        },
+        "051": {
+          "a": "PS1312",
+          "b": ".A1 1869c",
+          "u": "<Rare Bk Coll : Finkelstein Coll>",
+          "c": "Another issue. Imprint: San Francisco, Cal. : H. H. Bancroft ; Hartford, Conn. : American Pub. Co., 1869. 651, [1] p. Bookplate: F.H. Woodworth."
+        }
+      }
+    }, {
+      "position": "5",
+      "leader": "01995cam a2200373   4500",
+      "controlField": {
+        "001": "212",
+        "005": "20060629073904.0",
+        "007": "cr |||||||||||",
+        "008": "990716s1774    ru b          000 0 rusr"
+      },
+      "dataField": {
+        "100": {
+          "a": "Fischer, Johann Eberhard,",
+          "d": "1697-1771."
+        },
+        "240": {
+          "a": "Sibirische Geschichte.",
+          "l": "Russian"
+        },
+        "245": {
+          "a": "Sibirskai͡a istorīi͡a s samago otkrytīi͡a Sibiri do zavoevanīi͡a seĭ zemli rossīĭskim oruzhīem,",
+          "c": "sochinennai͡a na Ni͡emet͡skom i͡azyki͡e i v sobranīi Akademicheskom chitannai͡a chlenom Sanktpeterburgskoĭ Akademīi nauk i professorom drevnosteĭ i istorīi, tak zhe chlenom istoricheskago Gettingskago sobranīi͡a Iogannom Ebergardom Fisherom."
+        },
+        "260": {
+          "a": "V Sanktpeterburgi͡e",
+          "b": "pri Imperatorskoĭ Akademīi nauk,",
+          "c": "1774 goda."
+        },
+        "300": {
+          "a": "[2], 631, [1] p.",
+          "b": "2 folded maps.",
+          "c": "29 cm. (4to)"
+        },
+        "500": {},
+        "530": {},
+        "561": {
+          "5": "DLC",
+          "a": "LC copy from the library of G.V. Yudin. Has Yudin's bookplate; has Yudin's blind stamp on p. 13."
+        },
+        "651": {
+          "a": "Siberia (Russia)",
+          "x": "History",
+          "v": "Early works to 1800."
+        },
+        "700": {
+          "a": "Miller, Gerard Fridrikh,",
+          "d": "1705-1783."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Yudin Collection (Library of Congress)"
+        },
+        "856": {
+          "d": "mtfrb",
+          "f": "05256",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.05256"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "955": {
+          "a": "vj00",
+          "i": "vj34 2004-10-27 NEW INPUT",
+          "e": "vj34 2004-11-17"
+        },
+        "984": {},
+        "985": {
+          "a": "pmpull",
+          "e": "intldl"
+        },
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC",
+          "e": "dcrb"
+        },
+        "041": {
+          "a": "rus",
+          "h": "ger"
+        },
+        "043": {},
+        "050": {
+          "a": "DK764",
+          "b": ".F517"
+        }
+      }
+    }, {
+      "position": "6",
+      "leader": "01042cam a2200265 a 4500",
+      "controlField": {
+        "001": "271",
+        "005": "20010703081051.0",
+        "008": "940209s1876    un       b    000 0 ruso"
+      },
+      "dataField": {
+        "100": {
+          "a": "Alʹbert, M. I.",
+          "q": "(M. Izrailʹevich)"
+        },
+        "240": {},
+        "245": {
+          "a": "Biblīomanīi͡a--kulʹturno-kriticheskīĭ ėti͡ud :",
+          "b": "pervoe i edinstvennoe sochinenīe na russkom i͡azyki͡e ob ėtom predmeti͡e /",
+          "c": "M.I. Alʹberta."
+        },
+        "260": {
+          "a": "Odessa :",
+          "b": "Pechat. v Tip. Ulʹrikha i Shulʹt͡se,",
+          "c": "1876."
+        },
+        "300": {
+          "a": "35 p. ;",
+          "c": "21 cm."
+        },
+        "500": {
+          "5": "DLC",
+          "a": "Source: Purchase from Gennadiĭ Vasilʹevich Yudin, 1906."
+        },
+        "504": {},
+        "650": {},
+        "710": {
+          "5": "DLC",
+          "a": "Yudin Collection (Library of Congress)"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "NEW INPUT; sd13 06-26-01",
+          "d": "le03 2001-07-02;",
+          "e": "le02 2001-07-03 to BCCD"
+        },
+        "984": {},
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "Z992",
+          "b": ".A414 1876"
+        }
+      }
+    }, {
+      "position": "7",
+      "leader": "02250cam a2200433 a 4500",
+      "controlField": {
+        "001": "277",
+        "005": "20151218090757.0",
+        "008": "990602s1810    pau           000 0 eng"
+      },
+      "dataField": {
+        "110": {
+          "a": "Pennsylvania.",
+          "b": "High Court of Errors and Appeals."
+        },
+        "245": {
+          "a": "The opinion of Judge Cooper on the effect of a sentence of a foreign court of admiralty /",
+          "c": "published (with his permission) by Alexander James Dallas."
+        },
+        "260": {
+          "a": "Philadelphia :",
+          "b": "Printed for P. Byrne, law book-seller,",
+          "c": "1810."
+        },
+        "300": {
+          "a": "xii, [1], xiii-xiv, [2], 10-79, [1] p. ;",
+          "c": "22 cm"
+        },
+        "500": {},
+        "510": {
+          "a": "Cohen, M.L.  Bibliography of early American law,",
+          "c": "11181"
+        },
+        "600": {
+          "a": "Dempsey",
+          "c": "(Assignee of Brown)",
+          "v": "Trials, litigation, etc."
+        },
+        "610": {
+          "a": "Insurance Company of Pennsylvania",
+          "v": "Trials, litigation, etc."
+        },
+        "650": {},
+        "700": {
+          "5": "DLC",
+          "a": "Jefferson, Thomas,",
+          "d": "1743-1826,",
+          "e": "former owner."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Joseph Meredith Toner Collection (Library of Congress)"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "952": {},
+        "955": {
+          "a": "NEW INPUT vj14 06-02-99; vj06 09-21-99; vj14 9-21-99",
+          "c": "vj14 2002-04-08",
+          "e": "vj14 2002-04-08",
+          "i": "he04 2015-12-16"
+        },
+        "984": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "e": "dcrmb"
+        },
+        "043": {
+          "a": "n-us-pa"
+        },
+        "050": {
+          "a": "KF228.D46",
+          "b": "P46 1810"
+        },
+        "051": {
+          "a": "KF228.D46",
+          "b": "P46 1810 Copy 2",
+          "c": "Forms part of the Jefferson Exhibit Collection. Thomas Jefferson's copy, with his initial by signature 1. Inscription on title page: Mr. Cooper to Mr. Jefferson."
+        }
+      }
+    }, {
+      "position": "8",
+      "leader": "01158cas a2200289 a 4500",
+      "controlField": {
+        "001": "279",
+        "005": "20071002090114.0",
+        "008": "930201 1910    dcu                 eng"
+      },
+      "dataField": {
+        "110": {},
+        "245": {},
+        "260": {
+          "a": "[Washington, D.C.] :",
+          "b": "The Society,",
+          "c": "1910-<1996   >"
+        },
+        "362": {},
+        "500": {},
+        "555": {},
+        "610": {
+          "a": "National Society of Daughters of Founders and Patriots of America",
+          "x": "Genealogy."
+        },
+        "651": {
+          "a": "United States",
+          "x": "Genealogy."
+        },
+        "906": {
+          "a": "0",
+          "b": "cbc",
+          "c": "serprem",
+          "d": "u",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-ilsserca"
+        },
+        "925": {
+          "a": "Acquire",
+          "b": "2 shelf copies",
+          "x": "policy default"
+        },
+        "955": {},
+        "984": {},
+        "991": {
+          "b": "r-LH&G",
+          "h": "E186.8",
+          "i": ".A15",
+          "t": "Copy 1",
+          "w": "GenBib bi 91-014814"
+        },
+        "010": {},
+        "020": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "043": {
+          "a": "n-us---"
+        },
+        "050": {
+          "a": "E186.8",
+          "b": ".A15"
+        }
+      }
+    }, {
+      "position": "9",
+      "leader": "01997cam a2200397 a 4500",
+      "controlField": {
+        "001": "281",
+        "005": "20011026101101.0",
+        "008": "930625s1917    nyucf         000 1 eng"
+      },
+      "dataField": {
+        "100": {
+          "a": "Twain, Mark,",
+          "d": "1835-1910",
+          "c": "(Spirit)"
+        },
+        "245": {
+          "a": "Jap Herron : a novel written from the Ouija board /",
+          "c": "with an introduction, The coming of Jap Herron."
+        },
+        "246": {},
+        "260": {
+          "a": "New York :",
+          "b": "Mitchell Kennerley,",
+          "c": "1917."
+        },
+        "300": {
+          "a": "229 p., [1] leaf of plates :",
+          "b": "1 port. ;",
+          "c": "19 cm."
+        },
+        "500": {
+          "5": "DLC",
+          "a": "Source: Gift of International Mark Twain Society."
+        },
+        "510": {
+          "a": "BAL",
+          "c": "3678"
+        },
+        "600": {
+          "a": "Twain, Mark,",
+          "d": "1835-1910",
+          "c": "(Spirit)"
+        },
+        "650": {},
+        "700": {
+          "a": "Hutchings, Emily Grant.",
+          "t": "Coming of Jap Herron."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "International Mark Twain Society,",
+          "e": "donor."
+        },
+        "906": {
+          "a": "0",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "922": {},
+        "952": {},
+        "955": {},
+        "985": {
+          "a": "rarebk/fri",
+          "e": "rbc"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "PZ3",
+          "b": ".H9696J"
+        },
+        "051": {
+          "a": "BF1301",
+          "b": ".T735 1917",
+          "u": "<Rare Bk Coll : Friedman Twain Coll>",
+          "c": "Copy 4. Source: Gift of Frances R. Friedman, June 15, 1992."
+        }
+      }
+    }, {
+      "position": "10",
+      "leader": "02019cam a22003851  4500",
+      "controlField": {
+        "001": "288",
+        "005": "20060918130926.0",
+        "007": "cr |||||||||||",
+        "008": "990716s1721    gw bf         000 0 ger"
+      },
+      "dataField": {
+        "100": {},
+        "245": {
+          "a": "Das veränderte Russland,",
+          "b": "in welchem die ietzige verfassung des geist- und weltlichen regiments; der brieges- staat zu lande und zu wasser; wahre zustand der russischen finantzen ... die begebenheiten des czarewitzen ... in einem biss 1720. gehenden journal vorgestellet werden, mit einer accuraten land- carte und kupferstichen versehen."
+        },
+        "260": {
+          "a": "Franckfurth,",
+          "b": "N. Förster,",
+          "c": "1721."
+        },
+        "300": {
+          "a": "6 p.l., 490, [6] p,",
+          "b": "front., plates (part fold.) fold. map",
+          "c": "21 cm."
+        },
+        "500": {},
+        "530": {},
+        "600": {
+          "a": "Alexis,",
+          "c": "Czarevitch, son of Peter I, Emperor of Russia,",
+          "d": "1690-1718."
+        },
+        "650": {},
+        "651": {
+          "a": "Russia",
+          "x": "Politics and government",
+          "y": "1689-1801."
+        },
+        "700": {},
+        "710": {
+          "5": "DLC",
+          "a": "Pre-1801 Imprint Collection (Library of Congress)"
+        },
+        "856": {
+          "d": "mtfrb",
+          "f": "01646",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.01646"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "u",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "955": {},
+        "985": {
+          "a": "pmpull",
+          "e": "intldl"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "CarP",
+          "d": "DLC"
+        },
+        "043": {
+          "a": "e-ur---"
+        },
+        "050": {
+          "a": "DK22",
+          "b": ".W4"
+        }
+      }
+    }, {
+      "position": "11",
+      "leader": "02410cam a2200409 a 4500",
+      "controlField": {
+        "001": "323",
+        "005": "20130408085757.0",
+        "008": "990119s1512    fr c          001 0 lat"
+      },
+      "dataField": {
+        "130": {
+          "a": "Codex (Corpus juris civilis).",
+          "n": "Book 1-9."
+        },
+        "245": {
+          "a": "Codicis huius i[m]perialis rursus et multo quidem diligentius vt a tergo patebit recogniti argumentum :",
+          "b": "tituli, leges, et autentice sub indice triplici alphabetico ponuntur : rubrice ferme omnes nouem librorum nouem versibus comprehenduntur : rubricarum continuationes ex Azonis Summa deprompte : summaria plurium doctorum, Bartholi, Baldi, Saliceti, Pauli de Castro hic ... multiplicantur ... : Breuiariu[m] Ioha[n]nis Fabri ... hic varijs in locis citat[ur] ... : electores imperatoris cum triplici ipsius corona exprimuntur."
+        },
+        "246": {
+          "i": "Colophon title:",
+          "a": "Codex legalis Justiniani Imperatoris serenissimi"
+        },
+        "260": {
+          "a": "[Paris] :",
+          "b": "Impensis honestoru[m] virorum Joha[n]nis Petit, Thilma[n]ni Keruer, ipsiusq[ue] Andree Boucard ...,",
+          "c": "ad xv. Kalendas Nouembris [18 Oct.] anno salutis 1512."
+        },
+        "300": {
+          "a": "[4], ccccclxxx, [26] leaves :",
+          "b": "1 port. (metal cut) ;",
+          "c": "24 cm. (4to)"
+        },
+        "500": {},
+        "510": {
+          "a": "Moreau",
+          "c": "II, 285"
+        },
+        "650": {},
+        "700": {
+          "a": "Chappuis, Jean,",
+          "d": "active 1500."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "2",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "922": {},
+        "952": {},
+        "955": {},
+        "985": {},
+        "991": {
+          "b": "c-LLRBR",
+          "h": "KJA1062.22",
+          "i": "1512",
+          "o": "am",
+          "t": "Copy 1",
+          "w": "BOOKS"
+        },
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "e": "dcrb",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "KJA1062.22",
+          "b": "1512"
+        }
+      }
+    }, {
+      "position": "12",
+      "leader": "01204cam a2200277 a 4500",
+      "controlField": {
+        "001": "324",
+        "005": "20040225102059.0",
+        "008": "990122s1929    gw            001 0 ger"
+      },
+      "dataField": {
+        "100": {
+          "a": "Reventlow, E.",
+          "q": "(Ernst),",
+          "c": "Graf,",
+          "d": "1869-1943."
+        },
+        "245": {
+          "a": "Kriegsschuldlüge und Kriegsschuldlügner /",
+          "c": "von Ernst Reventlow."
+        },
+        "260": {
+          "a": "München :",
+          "b": "J.F. Lehmann,",
+          "c": "1929."
+        },
+        "300": {
+          "a": "v, 258 p. ;",
+          "c": "20 cm."
+        },
+        "500": {},
+        "510": {
+          "a": "Gassert & Mattern.  Hitler library,",
+          "c": "821"
+        },
+        "650": {
+          "a": "World War, 1914-1918",
+          "x": "Causes."
+        },
+        "700": {
+          "5": "DLC",
+          "a": "Lehmann, J. F.",
+          "q": "(Julius Friedrich),",
+          "d": "1864-1935,",
+          "e": "inscriber."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Third Reich Collection (Library of Congress)"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "sj08 01-22-99",
+          "i": "vj23 2002-03-14 NEW INPUT",
+          "e": "vj16 2002-05-02"
+        },
+        "984": {},
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "D511",
+          "b": ".R42"
+        },
+        "051": {
+          "a": "D511",
+          "b": ".R42 Copy 2",
+          "c": "LC copy inscribed by publisher: \"Treulichst zugeeignet als Kampfmittel für das Volksbegehren J.F. Lehmann\". Publisher's prospectuses removed from book and shelved with Third Reich Collection miscellany."
+        }
+      }
+    }, {
+      "position": "13",
+      "leader": "00754cam a22002295a 4500",
+      "controlField": {
+        "001": "325",
+        "005": "20161220140244.0",
+        "008": "871025s1987    ag a          000 0 eng"
+      },
+      "dataField": {
+        "100": {},
+        "245": {
+          "a": "Regimen previsonal del trabajador rural y otros institutos de la Seguridad Social Agraria /",
+          "c": "Silvia M. Marchioli."
+        },
+        "260": {
+          "a": "Buenos Aires :",
+          "b": "Pensamiento Juridico,",
+          "c": "1987."
+        },
+        "300": {
+          "a": "398 p. :",
+          "b": "ill. ;",
+          "c": "23 cm."
+        },
+        "500": {},
+        "906": {
+          "a": "7",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "u",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "920": {},
+        "922": {},
+        "952": {},
+        "035": {},
+        "010": {},
+        "020": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {}
+      }
+    }, {
+      "position": "14",
+      "leader": "00775cam a22002294a 4500",
+      "controlField": {
+        "001": "330",
+        "005": "20130408085758.0",
+        "008": "971217s1842    ce       d    000 0 tam"
+      },
+      "dataField": {
+        "245": {},
+        "260": {
+          "a": "Jaffna :",
+          "b": "Jaffna Book Society,",
+          "c": "1842."
+        },
+        "300": {
+          "a": "1 v. (various pagings) ;",
+          "c": "22 cm."
+        },
+        "500": {},
+        "650": {
+          "a": "Tamil language",
+          "v": "Dictionaries."
+        },
+        "700": {
+          "a": "Spaulding, L.",
+          "q": "(Levi),",
+          "d": "1791-1873."
+        },
+        "710": {},
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "2",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "NEW INPUT; yj05 12-17-97",
+          "i": "cg09 2009-06-05 to AD"
+        },
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "PL4757",
+          "b": ".M34 1842"
+        }
+      }
+    }, {
+      "position": "15",
+      "leader": "02267cam a2200445 a 4500",
+      "controlField": {
+        "001": "338",
+        "005": "20090626100544.0",
+        "008": "990219s1565    fr            001 0 lat"
+      },
+      "dataField": {
+        "100": {
+          "a": "Alciati, Andrea,",
+          "d": "1492-1550."
+        },
+        "240": {},
+        "245": {
+          "a": "Andreae Alciati I.C. Mediolanensis De verborum significatione libri IIII ; eiusdem In titulum XVI. lib. L. Digestorum commentarij :",
+          "b": "accessit index locupletissimus."
+        },
+        "246": {},
+        "260": {
+          "a": "Lugduni :",
+          "b": "Impensis Ant. Gryphii,",
+          "c": "1565."
+        },
+        "300": {
+          "a": "214, [2 blank], 99 [i.e. 89], [1], [6 blank], 635, [5 blank], [48, last five blank] p. ;",
+          "c": "18 cm. (8vo)"
+        },
+        "500": {},
+        "510": {
+          "a": "Baudrier, H.L.  Bib. lyonnaise,",
+          "c": "VIII, p. 343"
+        },
+        "630": {
+          "a": "Digesta.",
+          "p": "Book 50, title 16."
+        },
+        "650": {
+          "a": "Roman law",
+          "v": "Terminology."
+        },
+        "700": {
+          "a": "Alciati, Andrea,",
+          "d": "1492-1550.",
+          "t": "De verborum significatione commentaria."
+        },
+        "730": {
+          "a": "Digesta.",
+          "p": "Book 50, title 16."
+        },
+        "740": {},
+        "906": {
+          "a": "7",
+          "b": "ibc",
+          "c": "premver",
+          "d": "2",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "922": {},
+        "952": {},
+        "955": {},
+        "985": {},
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "e": "dcrb",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "KJA1950.A3",
+          "b": "D4 1565"
+        }
+      }
+    }, {
+      "position": "16",
+      "leader": "01092cam a2200277 a 4500",
+      "controlField": {
+        "001": "368",
+        "005": "19991119122432.0",
+        "008": "990216s1940    nyua          000 0 eng"
+      },
+      "dataField": {
+        "245": {
+          "a": "Peter Pauper's limerick book :",
+          "b": "a collection from many sources /",
+          "c": "illustrated by Herb Roth."
+        },
+        "260": {
+          "a": "Mount Vernon, N.Y. :",
+          "b": "Peter Pauper Press,",
+          "c": "[1940]"
+        },
+        "300": {
+          "a": "76 p. :",
+          "b": "ill. ;",
+          "c": "22 cm."
+        },
+        "650": {},
+        "700": {
+          "5": "DLC",
+          "a": "Rogers, Bruce,",
+          "d": "1870-1957,",
+          "e": "former owner."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Pforzheimer Bruce Rogers Collection (Library of Congress)"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {},
+        "984": {},
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "PN6231.L5",
+          "b": "P64"
+        },
+        "051": {
+          "a": "PN6231.L5",
+          "b": "P64 Copy 3",
+          "u": "<Rare Bk Coll : Pforzheimer Rogers Coll>",
+          "c": "Copy 3. Formerly owned by Bruce Rogers."
+        }
+      }
+    }, {
+      "position": "17",
+      "leader": "01128cam a2200253 a 4500",
+      "controlField": {
+        "001": "427",
+        "005": "20130408085817.0",
+        "008": "940128s1956    iluaf         000 0 eng"
+      },
+      "dataField": {
+        "100": {
+          "a": "Haraszti, Zoltán,",
+          "d": "1892-1980."
+        },
+        "245": {
+          "a": "The enigma of the Bay Psalm book /",
+          "c": "by Zoltán Haraszti."
+        },
+        "260": {
+          "a": "[Chicago] :",
+          "b": "University of Chicago Press,",
+          "c": "[1956]"
+        },
+        "300": {
+          "a": "xiii, 143 p., [4] p. of plates :",
+          "b": "ill. ;",
+          "c": "20 cm."
+        },
+        "500": {},
+        "630": {
+          "a": "Bible.",
+          "p": "Psalms.",
+          "l": "English.",
+          "s": "Bay Psalm book."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "952": {},
+        "955": {
+          "a": "NEW INPUT qr06 01-28-94",
+          "i": "vj23 2006-12-12",
+          "e": "vj23 2006-12-15"
+        },
+        "984": {},
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "BS1440.B415",
+          "b": "H3"
+        },
+        "051": {
+          "a": "BS1440.B415",
+          "b": "H3 Copy 3",
+          "c": "Issued with: The Bay Psalm book, a facsimile reprint of the first edition of 1640, published in 1956. Together in slipcase 21 x 14 cm."
+        }
+      }
+    }, {
+      "position": "18",
+      "leader": "02055cam a2200385 a 4500",
+      "controlField": {
+        "001": "455",
+        "005": "20090610141754.0",
+        "007": "cr |||||||||||",
+        "008": "990716s1750    ru       b    001 0 rusr"
+      },
+      "dataField": {
+        "100": {
+          "a": "Miller, Gerard Fridrikh,",
+          "d": "1705-1783."
+        },
+        "245": {
+          "a": "Opisanīe Sibirskago t͡sarstva i vsi͡ekh proizshedshikh v nem di͡el, ot nachala, a osoblivo ot pokorenīi͡a ego rossīĭskoĭ Derzhavi͡e po sīi vremena /",
+          "c": "sochineno Gerardom Friderikom Millerom ....",
+          "n": "Kniga pervai͡a."
+        },
+        "260": {
+          "a": "V Sanktpeterburgi͡e :",
+          "b": "Pri Imperatorskoĭ Akademīi nauk,",
+          "c": "1750 goda."
+        },
+        "300": {
+          "a": "[16], 457, [33] p. ;",
+          "c": "27 cm. (4to)"
+        },
+        "500": {},
+        "504": {},
+        "530": {},
+        "561": {
+          "5": "DLC",
+          "a": "LC copies 1 and 2 have Yudin's blind stamp on p. 13, the Yudin bookplate, and the label of bookseller V.I. Klochkov."
+        },
+        "651": {
+          "a": "Siberia (Russia)",
+          "x": "Description and travel",
+          "v": "Early works to 1800."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Yudin Collection (Library of Congress)"
+        },
+        "856": {
+          "d": "mtfrb",
+          "f": "59616",
+          "q": "h",
+          "u": "http://hdl.loc.gov/loc.rbc/mtfrb.59616"
+        },
+        "859": {
+          "3": "Meeting of Frontiers: Siberia, Alaska, and the American West - \"Rare Book Collections\" Collection Description",
+          "u": "http://hdl.loc.gov/loc.eur/mtfhtml.0054"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "955": {
+          "a": "NEW INPUT vj34 07-16-99",
+          "e": "vj34 2004-11-18"
+        },
+        "984": {},
+        "985": {
+          "a": "pmpull",
+          "e": "intldl"
+        },
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "e": "dcrb",
+          "d": "DLC"
+        },
+        "041": {
+          "a": "rus",
+          "h": "ger"
+        },
+        "043": {},
+        "050": {
+          "a": "DK764",
+          "b": ".M78 1750"
+        }
+      }
+    }, {
+      "position": "19",
+      "leader": "00618cam a22002051  4500",
+      "controlField": {
+        "001": "519",
+        "005": "19990812143520.0",
+        "008": "990623m19659999cau           000 0 eng"
+      },
+      "dataField": {
+        "110": {
+          "a": "Defense Language Institute (U.S.).",
+          "b": "West Coast Branch."
+        },
+        "245": {},
+        "260": {
+          "a": "Presidio of Monterey,",
+          "c": "1965-"
+        },
+        "300": {
+          "a": "v. <1-2>",
+          "c": "27 cm."
+        },
+        "650": {
+          "a": "Russian language",
+          "x": "Grammar."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "3",
+          "e": "opcn",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "985": {},
+        "991": {
+          "b": "c-GenColl",
+          "h": "PG2111",
+          "i": ".U486",
+          "o": "am",
+          "t": "Copy 1",
+          "w": "BOOKS"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "PG2111",
+          "b": ".U486"
+        }
+      }
+    }, {
+      "position": "20",
+      "leader": "00660cam a22002051  4500",
+      "controlField": {
+        "001": "520",
+        "005": "20000905142111.0",
+        "008": "990623s1965    cau           000 0 eng"
+      },
+      "dataField": {
+        "110": {
+          "a": "Defense Language Institute (U.S.).",
+          "b": "West Coast Branch."
+        },
+        "245": {
+          "a": "Russian:",
+          "b": "scientific Russian, ten week course; reference book."
+        },
+        "260": {
+          "a": "Presidio of Monterey,",
+          "c": "1965."
+        },
+        "300": {
+          "a": "i, 176 p.",
+          "c": "27 cm."
+        },
+        "650": {
+          "a": "Russian language",
+          "x": "Technical Russian."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "3",
+          "e": "opcn",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "985": {},
+        "991": {
+          "b": "c-GenColl",
+          "h": "PG2120.S3",
+          "i": "U5",
+          "o": "am",
+          "t": "Copy 1",
+          "w": "BOOKS"
+        },
+        "035": {},
+        "010": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "PG2120.S3",
+          "b": "U5"
+        }
+      }
+    }, {
+      "position": "21",
+      "leader": "01776cam a2200409 a 4500",
+      "controlField": {
+        "001": "561",
+        "005": "20161201141248.0",
+        "008": "990413s1932    enk           000 0 eng"
+      },
+      "dataField": {
+        "100": {},
+        "240": {
+          "a": "Odyssey.",
+          "l": "English"
+        },
+        "245": {},
+        "260": {
+          "a": "London :",
+          "b": "E. Walker, W. Merton, B. Rogers,",
+          "c": "1932."
+        },
+        "300": {
+          "a": "[360] p. ;",
+          "c": "30 cm."
+        },
+        "500": {},
+        "510": {
+          "a": "Library of Congress. Lessing J. Rosenwald collection,",
+          "c": "2258"
+        },
+        "561": {
+          "5": "DLC",
+          "a": "LC copy, in slipcase with book review laid in, has bookplate of L. Gordon Slutz."
+        },
+        "600": {
+          "a": "Odysseus,",
+          "c": "King of Ithaca (Mythological character)",
+          "v": "Poetry."
+        },
+        "650": {
+          "a": "Epic poetry, Greek",
+          "v": "Translations into English."
+        },
+        "700": {
+          "5": "DLC",
+          "a": "Rogers, Bruce,",
+          "d": "1870-1957,",
+          "e": "former owner."
+        },
+        "710": {
+          "5": "DLC",
+          "a": "Pforzheimer Bruce Rogers Collection (Library of Congress)"
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "952": {},
+        "955": {},
+        "984": {},
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "041": {
+          "a": "eng",
+          "h": "grc"
+        },
+        "050": {
+          "a": "PA4025.A5",
+          "b": "L3 1932b"
+        },
+        "051": {
+          "a": "PA4025.A5",
+          "b": "L3 1932b",
+          "c": "Copy 2. Signed by Bruce Rogers; in slipcase, with prospectus laid in."
+        }
+      }
+    }, {
+      "position": "22",
+      "leader": "01900cam a2200385 a 4500",
+      "controlField": {
+        "001": "650",
+        "005": "20130408085840.0",
+        "008": "990217s1546    fr            001 0 lat"
+      },
+      "dataField": {
+        "100": {
+          "a": "Alciati, Andrea,",
+          "d": "1492-1550."
+        },
+        "240": {},
+        "245": {},
+        "246": {},
+        "260": {
+          "a": "Lugduni :",
+          "b": "Apud Iacobum Giunta,",
+          "c": "1546."
+        },
+        "300": {
+          "a": "646, [48] p. ;",
+          "c": "17 cm. (8vo)"
+        },
+        "500": {},
+        "510": {
+          "a": "Index Aureliensis",
+          "c": "102.951"
+        },
+        "650": {},
+        "700": {
+          "a": "Montagna, Ioannes,",
+          "d": "active 1519."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "premver",
+          "d": "2",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-genrareb"
+        },
+        "922": {},
+        "952": {},
+        "955": {},
+        "985": {},
+        "991": {
+          "b": "c-LLRBR",
+          "h": "KJA2562",
+          "i": ".A85 1546",
+          "o": "am",
+          "t": "Copy 1",
+          "w": "BOOKS"
+        },
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "e": "dcrb",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {
+          "a": "KJA2562",
+          "b": ".A85 1546"
+        }
+      }
+    }, {
+      "position": "23",
+      "leader": "02763cam a2200397 a 4500",
+      "controlField": {
+        "001": "684",
+        "005": "20130408085842.0",
+        "008": "970930s1567    sz            001 0 lat"
+      },
+      "dataField": {
+        "100": {
+          "a": "Sandeo, Felino Maria,",
+          "d": "1444-1503."
+        },
+        "240": {},
+        "245": {
+          "a": "Commentaria Felini Sandei Ferrariensis, iuris canonici interpretis perspicacissimi & Rotae causarum auditoris celeberrimi, in V lib. Decretalium longè utilissima :",
+          "b": "doctissimorum virorum Benedicti à Vadis, Philippi Simonetae, Ioannis de Gradibus, atq[ue] aliorum adnotationibus rerumq́[ue] summis illustrata, : ac ... collatione ad uetustissimorum codicum fidem facta, integritati suae fideliter restituta : vna cum tractatibus eiusdem Felini, & rerum ac sententiarum ... indice ... fidelissimo."
+        },
+        "246": {},
+        "260": {
+          "a": "Basileae :",
+          "b": "Ex officina Frobeniana,",
+          "c": "1567."
+        },
+        "300": {
+          "a": "4 v. ;",
+          "c": "40 cm. (fol.)"
+        },
+        "500": {
+          "5": "DLC",
+          "a": "LC set is bound in 2 physical volumes."
+        },
+        "510": {
+          "a": "Adams",
+          "c": "S-299"
+        },
+        "610": {
+          "a": "Catholic Church.",
+          "t": "Decretales Gregorii IX."
+        },
+        "650": {},
+        "700": {
+          "a": "Vadi, Benedetto,",
+          "d": "active 16th century."
+        },
+        "906": {
+          "a": "7",
+          "b": "cbc",
+          "c": "orignew",
+          "d": "2",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "922": {},
+        "952": {},
+        "955": {
+          "a": "vj04 09-30-97; vj06 10-01-97",
+          "c": "vj21 2005-05-26",
+          "e": "vj16 2005-05-31"
+        },
+        "010": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "e": "dcrb",
+          "c": "DLC"
+        },
+        "050": {
+          "a": "KBR1925.S27",
+          "b": "A346 1567"
+        }
+      }
+    }, {
+      "position": "24",
+      "leader": "02679cam a2200505 a 4500",
+      "controlField": {
+        "001": "834",
+        "005": "20160629104455.0",
+        "008": "971219m19739999au ab    b    001 0 ger"
+      },
+      "dataField": {
+        "245": {
+          "a": "Die Habsburgermonarchie 1848-1918 /",
+          "c": "im Auftrag der Kommission für Geschichte der Österreich-Ungarischen Monarchie (1848-1918), herausgegeben von Adam Wandruszka und Peter Urbanitsch."
+        },
+        "260": {
+          "a": "Wien",
+          "b": "Österreichische Akademie der Wissenschaften,",
+          "c": "1973-<2014   >."
+        },
+        "300": {
+          "a": "<v. 1-9, 11; in 16   > :",
+          "b": "ill., maps (some col.) ;",
+          "c": "25 cm.-28 x 38 cm."
+        },
+        "504": {},
+        "505": {},
+        "651": {
+          "a": "Austria",
+          "x": "Foreign relations",
+          "y": "1867-1918."
+        },
+        "700": {},
+        "710": {},
+        "856": {
+          "3": "Book review (H-Net)",
+          "u": "http://www.h-net.org/reviews/showrev.php?id=14534"
+        },
+        "906": {
+          "a": "7",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "1",
+          "e": "ncip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "955": {
+          "a": "NEW INPUT ld99 12-19-97; ld02 12-24-97 to sl",
+          "i": "ff12 2011-07-22 (v. 7-9 added) to CALM",
+          "c": "ff12 2015-06-15 (v. 11:pt.2 added) to CALM"
+        },
+        "991": {
+          "b": "r-EurRR",
+          "h": "DB85",
+          "i": ".H25",
+          "t": "copy 1",
+          "m": "Austria",
+          "w": "GenBib bi 98-002437"
+        },
+        "010": {},
+        "020": {},
+        "035": {},
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "043": {},
+        "050": {
+          "a": "DB85",
+          "b": ".H25"
+        }
+      }
+    }, {
+      "position": "25",
+      "leader": "00826cam a22002175a 4500",
+      "controlField": {
+        "001": "862",
+        "005": "20070410105605.0",
+        "008": "970806s1976    nyu           000 0 eng"
+      },
+      "dataField": {
+        "100": {},
+        "245": {
+          "a": "Practice and theory of Tibetan Buddhism /",
+          "c": "Geshe Lhundup Sopa and Jeffrey Hopkins ; with a foreword by His Holiness, the Dalai Lama."
+        },
+        "260": {
+          "a": "New York : Grove Press : distributed by Random House,",
+          "c": "1976."
+        },
+        "300": {},
+        "440": {
+          "a": "An Evergreen book ;",
+          "v": "E-672"
+        },
+        "856": {
+          "3": "Publisher description",
+          "u": "http://www.loc.gov/catdir/enhancements/fy0712/75042898-d.html"
+        },
+        "906": {
+          "a": "0",
+          "b": "ibc",
+          "c": "orignew",
+          "d": "2",
+          "e": "ocip",
+          "f": "19",
+          "g": "y-gencatlg"
+        },
+        "035": {},
+        "010": {},
+        "020": {
+          "a": "0802140068 (pbk.) :",
+          "c": "$3.95"
+        },
+        "040": {
+          "a": "DLC",
+          "c": "DLC",
+          "d": "DLC"
+        },
+        "050": {}
+      }
+    }]
+  },
+  "domain": "Books"
+}
