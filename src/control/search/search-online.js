@@ -3,7 +3,7 @@ import SetProxy from '../set-proxy';
 import SetTimeout from '../set-timeout';
 import {searchRetrieve} from './query/search-retreive';
 import unirest from 'unirest';
-
+import X2JS from 'x2js';
 const QUERY_URL_LOC = process.env.QUERY_URL_LOC || 'http://www.loc.gov/z39voy';
 const QUERY_URL_BIBSYS = process.env.QUERY_URL_BIBSYS || 'http://sru.bibsys.no/search/biblio';
 const QUERY_URL_GAPINES = process.env.QUERY_URL_GAPINES || 'http://gapines.org/opac/extras/sru';
