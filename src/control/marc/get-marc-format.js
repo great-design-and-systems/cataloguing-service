@@ -1,13 +1,14 @@
-import jsonfile from 'jsonfile';
+import fs from 'fs';
 const MARC_FORMAT_JSON = 'marc-format.json';
+
 export default class GetMarcFormat {
     constructor(callback) {
-        jsonfile.read(MARC_FORMAT_JSON, (err, obj)=> {
+        fs.readFile(MARC_FORMAT_JSON, (err, data)=> {
             if (err) {
                 callback(err);
             } else {
-                callback(undefined, obj);
+                callback(undefined, JSON.parse(data));
             }
-        })
+        });
     }
 }

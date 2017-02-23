@@ -31,7 +31,7 @@ export default class SearchOnline {
         new SetTimeout(new SetProxy(unirest.get(searchUrl)).getRequest()).getRequest().end((response) => {
             if (!response.error || response.error == null) {
                 const records = new X2JS().xml2js(response.body);
-                callback(undefined, new SearchResponse(query.recordSchema, records));
+                callback(undefined, new SearchResponse(records));
             } else {
                 console.error(response.error);
                 callback(response.error);

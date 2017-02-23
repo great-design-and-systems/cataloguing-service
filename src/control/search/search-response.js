@@ -11,8 +11,7 @@ export default class SearchResponse {
             this.resultCount = searchRetrieveResponse.echoedSearchRetrieveRequest ? searchRetrieveResponse.echoedSearchRetrieveRequest.maximumRecords['__text'] : 0;
             this.nextPosition = searchRetrieveResponse.nextRecordPosition ? searchRetrieveResponse.nextRecordPosition['__text'] : 0;
             if (searchRetrieveResponse.records && searchRetrieveResponse.records.record) {
-                console.log(' searchRetrieveResponse.records', searchRetrieveResponse.records);
-                if (searchRetrieveResponse.records.record instanceof Array) {
+                if (searchRetrieveResponse.records.record.length) {
                     for (let index = 0; index < searchRetrieveResponse.records.record.length; index++) {
                         let recordData = searchRetrieveResponse.records.record[index];
                         this.data.push(new CatalogResponseItem(recordData));
@@ -21,8 +20,7 @@ export default class SearchResponse {
                     this.resultCount = 1;
                     this.data.push(new CatalogResponseItem(searchRetrieveResponse.records.record));
                 }
-                new MarcDecoder(this.data, (err, data)=> {
-                    console.log('data', data);
+                new MarcDecoder(this.data[0], (err, data)=> {
                 });
             }
         }
