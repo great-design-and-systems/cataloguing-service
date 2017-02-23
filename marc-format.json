@@ -1,200 +1,315 @@
 {
   "leader": {
-    "Logical record length": [0, 4],
-    "Record status": [5, {
-      "Increase in encoding level": "a",
-      "Corrected or revised": "c",
-      "Deleted": "d",
-      "New": "n",
-      "Increase in encoding level from prepublication": "p"
-    }],
-    "Type of Record": [6, {
-      "Language material": "a"
-      "Archival and manuscripts control [OBSOLETE]": "b"
-      "Notated music": "c"
-      "Manuscript notated music": "d"
-      "Cartographic material": "e"
-      "Manuscript cartographic material": "f"
-      "Projected medium": "g"
-      "Microform publications [OBSOLETE]": "h"
-      "Nonmusical sound recording": "i"
-      "Musical sound recording": "j"
-      "Two-dimensional nonprojectable graphic": "k"
-      "Computer file": "m"
-      "Special instructional material [OBSOLETE]": "n"
-      "Kit": "o"
-      "Mixed material": "p"
-      "Three-dimensional artifact or naturally occurring object": "r"
-      "Manuscript language material": "t"
-    }],
-    "Bibliographic level": [7, {
-      "Monographic component part": "a",
-      "Serial component part": "b",
-      "Collection": "c",
-      "Subunit": "d",
-      "Integrating resource": "i",
-      "Monograph/item": "m",
-      "Serial": "s"
-    }],
-    "Type of Control": [8, {
-      "No specific type": "#",
-      "Archival": "a"
-
-    }],
-    "Character coding scheme": [9, {
-      "format": {
-        "MARC-8": "#",
-        "UCS/Unicode": "a"
+    "Logical record length": [
+      0,
+      4
+    ],
+    "Record status": [
+      5,
+      {
+        "Increase in encoding level": "a",
+        "Corrected or revised": "c",
+        "Deleted": "d",
+        "New": "n",
+        "Increase in encoding level from prepublication": "p"
       }
-    }],
+    ],
+    "Type of Record": [
+      6,
+      {
+        "Language material": "a",
+        "Archival and manuscripts control [OBSOLETE]": "b",
+        "Notated music": "c",
+        "Manuscript notated music": "d",
+        "Cartographic material": "e",
+        "Manuscript cartographic material": "f",
+        "Projected medium": "g",
+        "Microform publications [OBSOLETE]": "h",
+        "Nonmusical sound recording": "i",
+        "Musical sound recording": "j",
+        "Two-dimensional nonprojectable graphic": "k",
+        "Computer file": "m",
+        "Special instructional material [OBSOLETE]": "n",
+        "Kit": "o",
+        "Mixed material": "p",
+        "Three-dimensional artifact or naturally occurring object": "r",
+        "Manuscript language material": "t"
+      }
+    ],
+    "Bibliographic level": [
+      7,
+      {
+        "Monographic component part": "a",
+        "Serial component part": "b",
+        "Collection": "c",
+        "Subunit": "d",
+        "Integrating resource": "i",
+        "Monograph/item": "m",
+        "Serial": "s"
+      }
+    ],
+    "Type of Control": [
+      8,
+      {
+        "No specific type": "#",
+        "Archival": "a"
+      }
+    ],
+    "Character coding scheme": [
+      9,
+      {
+        "format": {
+          "MARC-8": "#",
+          "UCS/Unicode": "a"
+        }
+      }
+    ],
     "Indicator count": 10,
     "Subfield code count": 11,
-    "Base address of data": [12, 16],
-    "Encoding level": [17, {
-      "Full level": "#"
-      "Full level, material not examined": "1"
-      "Less-than-full level, material not examined": "2"
-      "Abbreviated level": "3"
-      "Core level": "4"
-      "Partial (preliminary) level": "5"
-      "Minimal level": "7"
-      "Prepublication level": "8"
-      "Unknown": "u"
-      "Not applicable": "z"
-    }],
-    "Descriptive cataloging form": [18, {
-      "Non-ISBD": "#",
-      "AACR 2": "a",
-      "ISBD punctuation omitted": "c",
-      "ISBD punctuation included": "i",
-      "Non-ISBD punctuation omitted": "n",
-      "Partial ISBD (BK) [OBSOLETE]": "p",
-      "Provisional (VM MP MU) [OBSOLETE]": "r",
-      "Unknown": "u"
-    }],
-    "Multipart resource record level": [19, {
-      "Not specified or not applicable": "#",
-      "Set": "a",
-      "Part with independent title": "b",
-      "Part with dependent title": "c"
-    }],
-    "Entry Map": [22, 23, ["Length of the length-of-field portion", "Length of the starting-character-position portion", "Length of the implementation-defined portion", "Undefined Entry map character position"]]
+    "Base address of data": [
+      12,
+      16
+    ],
+    "Encoding level": [
+      17,
+      {
+        "Full level": "#",
+        "Full level, material not examined": "1",
+        "Less-than-full level, material not examined": "2",
+        "Abbreviated level": "3",
+        "Core level": "4",
+        "Partial (preliminary) level": "5",
+        "Minimal level": "7",
+        "Prepublication level": "8",
+        "Unknown": "u",
+        "Not applicable": "z"
+      }
+    ],
+    "Descriptive cataloging form": [
+      18,
+      {
+        "Non-ISBD": "#",
+        "AACR 2": "a",
+        "ISBD punctuation omitted": "c",
+        "ISBD punctuation included": "i",
+        "Non-ISBD punctuation omitted": "n",
+        "Partial ISBD (BK) [OBSOLETE]": "p",
+        "Provisional (VM MP MU) [OBSOLETE]": "r",
+        "Unknown": "u"
+      }
+    ],
+    "Multipart resource record level": [
+      19,
+      {
+        "Not specified or not applicable": "#",
+        "Set": "a",
+        "Part with independent title": "b",
+        "Part with dependent title": "c"
+      }
+    ],
+    "Entry Map": [
+      22,
+      23,
+      [
+        "Length of the length-of-field portion",
+        "Length of the starting-character-position portion",
+        "Length of the implementation-defined portion",
+        "Undefined Entry map character position"
+      ]
+    ]
   },
   "directory": {
-    "tag": [0, 2],
-    "Field length": [3, 6],
-    "Starting character position": [7, 11]
+    "tag": [
+      0,
+      2
+    ],
+    "Field length": [
+      3,
+      6
+    ],
+    "Starting character position": [
+      7,
+      11
+    ]
   },
   "controlfields": {
     "CONTROL NUMBER": "001",
     "CONTROL NUMBER IDENTIFIER": "003",
     "DATE AND TIME OF LATEST TRANSACTION": "005",
-    "ADDITIONAL MATERIAL CHARACTERISTICS": ["006", {
-      "Form of material$Books": [0, {
-        "Language material": "a",
-        "Manuscript language material": "t"
-      }],
-      "Form of material$Computer Files/Electronic resource": [0, {
-        "Computer file/Electronic resource": "m",
-      }],
-      "Form of material$Maps": [0, {
-        "Cartographic material": "e",
-        "Manuscript cartographic material": "f"
-      }],
-      "Form of material$MIXED MATERIALS": [0, {
-        "Mixed material": "p"
-      }],
-      "Form of material$MUSIC": [0, {
-        "Notated music": "c",
-        "Manuscript notated music": "d",
-        "Nonmusical sound recording": "i",
-        "Musical sound recording": "j"
-      }],
-      "Form of material$CONTINUING RESOURCES": [0, {
-        "Serial/Integrating resource": "s"
-      }],
-      "Form of material$VISUAL MATERIALS": [0, {
-        "Projected medium": "g",
-        "Two-dimensional nonprojectable graphic": " k",
-        "Kit": "o",
-        "Three-dimensional artifact or naturally occurring object": "r"
-      }],
-      "$Books": {
-        "Illustrations": [1, 4],
-        "Nature of contents": [7, 10],
-        "Conference publication": 12,
-        "Festschrift": 13,
-        "Index": 14,
-        "Literary form": 16,
-        "Biography": 17
-      },
-      "$Computer Files/Electronic resource": {
-        "Type of computer file": 9
-      },
-      "$Maps": {
-        "Relief": [1, 4],
-        "Projection": [5, 6],
-        "Prime meridian [OBSOLETE]": 7,
-        "Type of cartographic material": 8,
-        "Index": 14,
-        "Special format characteristics": [16, 17]
-      },
-      "$MUSIC": {
-        "Form of composition": [1, 2],
-        "Format of music": 3,
-        "Music parts": 4,
-        "Accompanying matter": [7, 12],
-        "Literary text for sound recordings": [13, 14],
-        "Transposition and arrangement": 16
-      },
-      "$CONTINUING RESOURCES": {
-        "Frequency": 1,
-        "Regularity": 2,
-        "ISSN Center [OBSOLETE]": 3,
-        "Type of continuing resource": 4,
-        "Form of original item": 5,
-        "Nature of entire work": 7,
-        "Nature of contents": [8, 10]
-        "Conference publication": 12,
-        "Original alphabet or script of title": 16,
-        "Entry convention": 17
-      },
-      "$VISUAL MATERIALS": {
-        "Accompanying matter [OBSOLETE]": [6, 10],
-        "Type of visual material": 16,
-        "Technique": 17
-      },
-      "Target audience": 5,
-      "Form of item": 6,
-      "Government publication": 11
-    }],
-    "PHYSICAL DESCRIPTION": ["007", {
-      "Category of material$Map": [0, {
-        "Map": "a"
-      }],
-      "$Map": {
-        "Specific material designation": [1, {
-          "Atlas": "d",
-          "Diagram": "g",
-          "Map": "j",
-          "Profile": "k",
-          "Model": "q",
-          "Remote-sensing image": "r",
-          "Section": "s",
-          "Unspecified": "u",
-          "View": "y",
-          "Other": "z",
-          "No attempt to code": "|"
-        }],
-        "Color": [3, {
-          "One color": "a",
-          "Multicolored": "c",
-          "|": "No Attempt to code"
-        }],
-        "Physical medium":[4, {
-          
-        }]
+    "ADDITIONAL MATERIAL CHARACTERISTICS": [
+      "006",
+      {
+        "Form of material$Books": [
+          0,
+          {
+            "Language material": "a",
+            "Manuscript language material": "t"
+          }
+        ],
+        "Form of material$Computer Files/Electronic resource": [
+          0,
+          {
+            "Computer file/Electronic resource": "m"
+          }
+        ],
+        "Form of material$Maps": [
+          0,
+          {
+            "Cartographic material": "e",
+            "Manuscript cartographic material": "f"
+          }
+        ],
+        "Form of material$MIXED MATERIALS": [
+          0,
+          {
+            "Mixed material": "p"
+          }
+        ],
+        "Form of material$MUSIC": [
+          0,
+          {
+            "Notated music": "c",
+            "Manuscript notated music": "d",
+            "Nonmusical sound recording": "i",
+            "Musical sound recording": "j"
+          }
+        ],
+        "Form of material$CONTINUING RESOURCES": [
+          0,
+          {
+            "Serial/Integrating resource": "s"
+          }
+        ],
+        "Form of material$VISUAL MATERIALS": [
+          0,
+          {
+            "Projected medium": "g",
+            "Two-dimensional nonprojectable graphic": " k",
+            "Kit": "o",
+            "Three-dimensional artifact or naturally occurring object": "r"
+          }
+        ],
+        "$Books": {
+          "Illustrations": [
+            1,
+            4
+          ],
+          "Nature of contents": [
+            7,
+            10
+          ],
+          "Conference publication": 12,
+          "Festschrift": 13,
+          "Index": 14,
+          "Literary form": 16,
+          "Biography": 17
+        },
+        "$Computer Files/Electronic resource": {
+          "Type of computer file": 9
+        },
+        "$Maps": {
+          "Relief": [
+            1,
+            4
+          ],
+          "Projection": [
+            5,
+            6
+          ],
+          "Prime meridian [OBSOLETE]": 7,
+          "Type of cartographic material": 8,
+          "Index": 14,
+          "Special format characteristics": [
+            16,
+            17
+          ]
+        },
+        "$MUSIC": {
+          "Form of composition": [
+            1,
+            2
+          ],
+          "Format of music": 3,
+          "Music parts": 4,
+          "Accompanying matter": [
+            7,
+            12
+          ],
+          "Literary text for sound recordings": [
+            13,
+            14
+          ],
+          "Transposition and arrangement": 16
+        },
+        "$CONTINUING RESOURCES": {
+          "Frequency": 1,
+          "Regularity": 2,
+          "ISSN Center [OBSOLETE]": 3,
+          "Type of continuing resource": 4,
+          "Form of original item": 5,
+          "Nature of entire work": 7,
+          "Nature of contents": [
+            8,
+            10
+          ],
+          "Conference publication": 12,
+          "Original alphabet or script of title": 16,
+          "Entry convention": 17
+        },
+        "$VISUAL MATERIALS": {
+          "Accompanying matter [OBSOLETE]": [
+            6,
+            10
+          ],
+          "Type of visual material": 16,
+          "Technique": 17
+        },
+        "Target audience": 5,
+        "Form of item": 6,
+        "Government publication": 11
       }
-    }]
+    ],
+    "PHYSICAL DESCRIPTION": [
+      "007",
+      {
+        "Category of material$Map": [
+          0,
+          {
+            "Map": "a"
+          }
+        ],
+        "$Map": {
+          "Specific material designation": [
+            1,
+            {
+              "Atlas": "d",
+              "Diagram": "g",
+              "Map": "j",
+              "Profile": "k",
+              "Model": "q",
+              "Remote-sensing image": "r",
+              "Section": "s",
+              "Unspecified": "u",
+              "View": "y",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color": "a",
+              "Multicolored": "c",
+              "|": "No Attempt to code"
+            }
+          ],
+          "Physical medium": [
+            4,
+            {
+            }
+          ]
+        }
+      }
+    ]
   }
 }
