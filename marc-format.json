@@ -306,6 +306,94 @@
           "Physical medium": [
             4,
             {
+              "Paper": "a",
+              "Wood": "b",
+              "Stone": "c",
+              "Metal": "d",
+              "Synthetic": "e",
+              "Skin": "f",
+              "Textile": "g",
+              "Plastic": "i",
+              "Glass": "j",
+              "Vinyl": "l",
+              "Vellum": "n",
+              "Plaster": "p",
+              "Flexible base photographic, positive": "q",
+              "Flexible base photographic, negative": "r",
+              "Non-flexible base photographic, positive": "s",
+              "Non-flexible base photographic, negative": "t",
+              "Unknown": "u",
+              "Leather": "v",
+              "Parchment": "w",
+              "Other photographic medium": "y",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Type of reproduction": [
+            5,
+            {
+              "Facsimile": "f",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Production/reproduction details": [
+            6,
+            {
+              "Photocopy, blueline print": "a",
+              "Photocopy": "b",
+              "Pre-production": "c",
+              "Film": "d",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Positive/negative aspect": [
+            7,
+            {
+              "Positive": "a",
+              "Negative": "b",
+              "Mixed polarity": "m",
+              "Not applicable": "n",
+              "No attempt to code": "|"
+            }
+          ]
+        }
+      }
+    ],
+    "ELECTRONIC RESOURCE" : [
+      "007",
+      {
+        "Category of material$Computer file": [
+          0,
+          {
+            "Computer file": "c"
+          }
+        ],
+        "$Computer file": {
+          "Specific material designation": [
+            1,
+            {
+              "Tape cartridge": "a",
+              "Chip cartridge": "b",
+              "Computer optical disc cartridge": "c",
+              "Computer disc, type unspecified": "d",
+              "Computer disc cartridge, type unspecified": "e",
+              "Tape cassette": "f",
+              "Tape reel": "h",
+              "Magnetic disk": "j",
+              "Computer card": "k",
+              "Magneto-optical disc": "m",
+              "Optical disc": "o",
+              "Remote": "r",
+              "Standalone device": "s",
+              "Unspecified": "u",
+              "Other": "z",
+              "No attempt to code": "|"
             }
           ]
         }
