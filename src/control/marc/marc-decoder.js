@@ -8,44 +8,18 @@ export default class MarcDecoder {
             if (err) {
                 callback(err);
             } else {
-                new ParseFieldValue(lodash.keys(marcData), marcData, (key, value)=> {
-                    let contextValueFormat = marcFormat[key];
-                    if (contextValueFormat && value) {
-                        value = new GetFormattedValue(value, contextValueFormat).getValue();
+                const context = {
+                    leader: marcData.leader,
+                    controlField: marcData.controlField
+                };
+                new ParseFieldValue(lodash.keys(context), context, marcFormat, (err, data)=> {
+                    if (err) {
+                        callback(err);
+                    } else {
+                        callback(undefined, data);
                     }
-                    return value;
-                }, (err, data)=> {
                 });
-                callback();
             }
         });
-    }
-}
-
-class GetFormattedValue {
-    constructor(value, valueFormat) {
-        let valueArray = value.split('');
-        if (valueArray && valueArray.length) {
-            lodash.forEach(valueArray, (value, index)=> {
-                const fieldObject = lodash.filter(valueFormat, (format)=> {
-                    if (format instanceof Array) {
-                        return format[0] === index;
-                    } else {
-                        return format === index;
-                    }
-                });
-                console.log('fieldObject', fieldObject);
-            });
-        }
-    }
-
-    parseArrayFieldObject(fieldObject, index, value) {
-        if (fieldObject.length > 1) {
-
-        }
-    }
-
-    getValue() {
-        return this.formattedValue;
     }
 }

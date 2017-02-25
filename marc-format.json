@@ -106,7 +106,7 @@
       }
     ],
     "Entry Map": [
-      22,
+      20,
       23,
       [
         "Length of the length-of-field portion",
@@ -130,7 +130,7 @@
       11
     ]
   },
-  "controlfields": {
+  "controlfield": {
     "CONTROL NUMBER": "001",
     "CONTROL NUMBER IDENTIFIER": "003",
     "DATE AND TIME OF LATEST TRANSACTION": "005",
