@@ -58,10 +58,8 @@
     "Character coding scheme": [
       9,
       {
-        "format": {
-          "MARC-8": "#",
-          "UCS/Unicode": "a"
-        }
+        "MARC-8": "#",
+        "UCS/Unicode": "a"
       }
     ],
     "Indicator count": 10,
@@ -278,6 +276,35 @@
             "Map": "a"
           }
         ],
+        "Category of material$Computer file": [
+          0,
+          {
+            "Computer file": "c"
+          }
+        ],
+        "$Computer file": {
+          "Specific material designation": [
+            1,
+            {
+              "Tape cartridge": "a",
+              "Chip cartridge": "b",
+              "Computer optical disc cartridge": "c",
+              "Computer disc, type unspecified": "d",
+              "Computer disc cartridge, type unspecified": "e",
+              "Tape cassette": "f",
+              "Tape reel": "h",
+              "Magnetic disk": "j",
+              "Computer card": "k",
+              "Magneto-optical disc": "m",
+              "Optical disc": "o",
+              "Remote": "r",
+              "Standalone device": "s",
+              "Unspecified": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
         "$Map": {
           "Specific material designation": [
             1,
@@ -359,40 +386,6 @@
               "Negative": "b",
               "Mixed polarity": "m",
               "Not applicable": "n",
-              "No attempt to code": "|"
-            }
-          ]
-        }
-      }
-    ],
-    "ELECTRONIC RESOURCE" : [
-      "007",
-      {
-        "Category of material$Computer file": [
-          0,
-          {
-            "Computer file": "c"
-          }
-        ],
-        "$Computer file": {
-          "Specific material designation": [
-            1,
-            {
-              "Tape cartridge": "a",
-              "Chip cartridge": "b",
-              "Computer optical disc cartridge": "c",
-              "Computer disc, type unspecified": "d",
-              "Computer disc cartridge, type unspecified": "e",
-              "Tape cassette": "f",
-              "Tape reel": "h",
-              "Magnetic disk": "j",
-              "Computer card": "k",
-              "Magneto-optical disc": "m",
-              "Optical disc": "o",
-              "Remote": "r",
-              "Standalone device": "s",
-              "Unspecified": "u",
-              "Other": "z",
               "No attempt to code": "|"
             }
           ]
