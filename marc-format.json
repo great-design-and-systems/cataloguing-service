@@ -276,35 +276,90 @@
             "Map": "a"
           }
         ],
-        "Category of material$Computer file": [
+        "Category of material$ELECTRONIC RESOURCE": [
           0,
           {
             "Computer file": "c"
           }
         ],
-        "$Computer file": {
-          "Specific material designation": [
-            1,
-            {
-              "Tape cartridge": "a",
-              "Chip cartridge": "b",
-              "Computer optical disc cartridge": "c",
-              "Computer disc, type unspecified": "d",
-              "Computer disc cartridge, type unspecified": "e",
-              "Tape cassette": "f",
-              "Tape reel": "h",
-              "Magnetic disk": "j",
-              "Computer card": "k",
-              "Magneto-optical disc": "m",
-              "Optical disc": "o",
-              "Remote": "r",
-              "Standalone device": "s",
-              "Unspecified": "u",
-              "Other": "z",
-              "No attempt to code": "|"
-            }
-          ]
-        },
+        "Category of material$GLOBE": [
+          0,
+          {
+            "Globe": "d"
+          }
+        ],
+        "Category of material$TACTILE MATERIAL": [
+          0,
+          {
+            "Tactile material": "f"
+          }
+        ],
+        "Category of material$PROJECTED GRAPHIC": [
+          0,
+          {
+            "Projected graphic": "g"
+          }
+        ],
+        "Category of material$MICROFORM": [
+          0,
+          {
+            "Microform": "h"
+          }
+        ],
+        "Category of material$NONPROJECTED GRAPHIC": [
+          0,
+          {
+            "Nonprojected graphic": "k"
+          }
+        ],
+        "Category of material$MOTION PICTURE": [
+          0,
+          {
+            "Motion Picture": "m"
+          }
+        ],
+        "Category of material$KIT": [
+          0,
+          {
+            "Kit": "o"
+          }
+        ],
+        "Category of material$NOTATED MUSIC": [
+          0,
+          {
+            "Notated music": "q"
+          }
+        ],
+        "Category of material$SOUND RECORDING": [
+          0,
+          {
+            "Sound recording": "s"
+          }
+        ],
+        "Category of material$REMOTE-SENSING IMAGE": [
+          0,
+          {
+            "Remote-sensing image": "r"
+          }
+        ],
+        "Category of material$TEXT": [
+          0,
+          {
+            "Text": "t"
+          }
+        ],
+        "Category of material$VIDEORECORDING": [
+          0,
+          {
+            "Videorecording": "v"
+          }
+        ],
+        "Category of material$UNSPECIFIED": [
+          0,
+          {
+            "Unspecified": "z"
+          }
+        ],
         "$Map": {
           "Specific material designation": [
             1,
@@ -317,17 +372,14 @@
               "Remote-sensing image": "r",
               "Section": "s",
               "Unspecified": "u",
-              "View": "y",
-              "Other": "z",
-              "No attempt to code": "|"
+              "View": "y"
             }
           ],
           "Color": [
             3,
             {
               "One color": "a",
-              "Multicolored": "c",
-              "|": "No Attempt to code"
+              "Multicolored": "c"
             }
           ],
           "Physical medium": [
@@ -352,19 +404,13 @@
               "Unknown": "u",
               "Leather": "v",
               "Parchment": "w",
-              "Other photographic medium": "y",
-              "Other": "z",
-              "No attempt to code": "|"
+              "Other photographic medium": "y"
             }
           ],
           "Type of reproduction": [
             5,
             {
-              "Facsimile": "f",
-              "Not applicable": "n",
-              "Unknown": "u",
-              "Other": "z",
-              "No attempt to code": "|"
+              "Facsimile": "f"
             }
           ],
           "Production/reproduction details": [
@@ -373,10 +419,7 @@
               "Photocopy, blueline print": "a",
               "Photocopy": "b",
               "Pre-production": "c",
-              "Film": "d",
-              "Unknown": "u",
-              "Other": "z",
-              "No attempt to code": "|"
+              "Film": "d"
             }
           ],
           "Positive/negative aspect": [
@@ -385,11 +428,509 @@
               "Positive": "a",
               "Negative": "b",
               "Mixed polarity": "m",
-              "Not applicable": "n",
-              "No attempt to code": "|"
+              "Not applicable": "n"
             }
           ]
-        }
+        },
+        "$ELECTRONIC RESOURCE": {
+          "Specific material designation": [
+            1,
+            {
+              "Tape cartridge": "a",
+              "Chip cartridge": "b",
+              "Computer optical disc cartridge": "c",
+              "Computer disc, type unspecified": "d",
+              "Computer disc cartridge, type unspecified": "e",
+              "Tape cassette": "f",
+              "Tape reel": "h",
+              "Magnetic disk": "j",
+              "Computer card": "k",
+              "Magneto-optical disc": "m",
+              "Optical disc": "o",
+              "Remote": "r",
+              "Standalone device": "s",
+              "Unspecified": "u"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color": "a",
+              "Black-and-white": "b",
+              "Multicolored": "c",
+              "Gray scale": "g",
+              "Mixed": "m"
+            }
+          ],
+          "Dimensions": [
+            4,
+            {
+              "3 1/2 in.": "a",
+              "12 in.": "e",
+              "4 3/4 in. or 12 cm.": "g",
+              "1 1/8 x 2 3/8 in.": "i",
+              "3 7/8 x 2 1/2 in.": "j",
+              "5 1/4 in.": "o",
+              "8 in.": "v"
+            }
+          ],
+          "Sound": [
+            5,
+            {
+              "No sound (silent)": "#",
+              "Sound on medium": "a"
+            }
+          ],
+          "Image bit depth": [
+            6,
+            8,
+            {
+              "Exact bit depth": [
+                1,
+                999
+              ],
+              "Multiple": "mmm",
+              "Not applicable": "nnn",
+              "Unknown": "---",
+              "No attempt to code": "|||"
+            }
+          ],
+          "File Formats": [
+            9,
+            {
+              "One": "a",
+              "Multiple": "m"
+            }
+          ],
+          "Quality assurance target(s)": [
+            10,
+            {
+              "Absent": "a",
+              "Present": "p"
+            }
+          ],
+          "Antecedent/source": [
+            11,
+            {
+              "File reproduced from original": "a",
+              "File reproduced from microform": "b",
+              "File reproduced from an electronic resource": "c",
+              "File reproduced from an intermediate (not microform)": "d"
+            }
+          ],
+          "Level of compression": [
+            12,
+            {
+              "Uncompressed": "a",
+              "Lossless": "b",
+              "Lossy": "d"
+            }
+          ],
+          "Reformatting quality": [
+            13,
+            {
+              "Access": "a",
+              "Preservation":"p",
+              "Replacement": "r"
+            }
+          ]
+        },
+        "$GLOBE": {
+          "Specific material designation": [
+            1,
+            {
+              "Celestial globe": "a",
+              "Planetary or lunar globe": "b",
+              "Terrestrial globe": "c",
+              "Earth moon globe": "e",
+              "Unspecified": "u"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color": "a",
+              "Multicolored": "c"
+            }
+          ],
+          "Physical medium": [
+            4,
+            {
+              "Paper": "a",
+              "Wood": "b",
+              "Stone": "c",
+              "Metal": "d",
+              "Synthetic": "e",
+              "Skin": "f",
+              "Textile": "g",
+              "Plastic": "i",
+              "Vinyl": "l",
+              "Vellum": "n",
+              "Plaster": "p",
+              "Leather": "v",
+              "Parchment": "w"
+            }
+          ],
+          "Type of reproduction": [
+            5,
+            {
+              "Facsimile": "f"
+            }
+          ]
+        },
+        "$TACTILE MATERIAL": {
+          "Specific material designation": [
+            1,
+            {
+              "Moon": "a",
+              "Braille": "b",
+              "Combination": "c",
+              "Tactile, with no writing system": "d"
+            }
+          ],
+          "Class of braille writing": [
+            3,
+            4,
+            {
+              "No specified class of braille writing": "#",
+              "Literary braille": "a",
+              "Format code braille": "b",
+              "Mathematics and scientific braille": "c",
+              "Computer braille": "d",
+              "Music braille": "e",
+              "Multiple braille types": "m"
+            }
+          ],
+          "Level of contraction": [
+            5,
+            {
+              "Uncontracted": "a",
+              "Contracted": "b"
+            }
+          ],
+          "Braille music format": [
+            6,
+            8,
+            {
+              "No specified braille music format": "#",
+              "Bar over bar": "a",
+              "Bar by bar": "b",
+              "Line over line": "c",
+              "Paragraph": "d",
+              "Single line": "e",
+              "Section by section": "f",
+              "Line by line": "g",
+              "Open score": "h",
+              "Spanner short form scoring": "i",
+              "Short form scoring": "j",
+              "Outline": "k",
+              "Vertical score": "l"
+            }
+          ],
+          "Specific physical characteristics": [
+            9,
+            {
+              "Print/braille": "a",
+              "Jumbo or enlarged braille": "b"
+            }
+          ]
+        },
+        "$PROJECTED GRAPHIC": {
+          "Specific material designation": [
+            1,
+            {
+              "Filmstrip cartridge": "c",
+              "Filmslip": "d",
+              "Filmstrip, type unspecified": "f",
+              "Filmstrip roll": "o",
+              "Slide": "s",
+              "Transparency": "t"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color" : "a",
+              "Black-and-white": "b",
+              "Multicolored": "c",
+              "Hand colored": "h"
+            }
+          ],
+          "Base of emulsion": [
+            4,
+            {
+              "Glass": "d",
+              "Synthetic": "e",
+              "Safety film": "j",
+              "Film base, other than safety film": "k",
+              "Mixed collection": "m",
+              "Paper": "o"
+            }
+          ],
+          "Sound on medium or separate": [
+            5,
+            {
+              "No sound (silent)": "#",
+              "Sound on medium": "a",
+              "Sound separate from medium": "b"
+            }
+          ],
+          "Medium for sound": [
+            6,
+            {
+              "No sound (silent)": "#",
+              "Optical sound track on motion picture film": "a",
+              "Magnetic sound track on motion picture film": "b",
+              "Magnetic audio tape in cartridge": "c",
+              "Sound disc": "d",
+              "Magnetic audio tape on reel": "e",
+              "Magnetic audio tape in cassette": "f",
+              "Optical and magnetic sound track on motion picture film": "g",
+              "Videotape": "h",
+              "Videodisc": "i"
+            }
+          ],
+          "Dimensions": [
+            7,
+            {
+              "Standard 8 mm.": "a",
+              "Super 8 mm./single 8 mm.": "b",
+              "9.5 mm.": "c",
+              "16 mm.": "d",
+              "28 mm.": "e",
+              "35 mm.": "f",
+              "70 mm.": "g",
+              "2x2 in. or 5x5 cm.": "j",
+              "2 1/4 x 2 1/4 in. or 6x6 cm.": "k",
+              "4x5 in. or 10x13 cm.": "s",
+              "5x7 in. or 13x18 cm.": "t",
+              "8x10 in. or 21x26 cm.": "v",
+              "9x9 in. or 23x23 cm.": "w",
+              "10x10 in. or 26x26 cm.": "x",
+              "7x7 in. or 18x18 cm.": "y"
+            }
+          ],
+          "Secondary support material": [
+            8,
+            {
+              "No secondary support": "#",
+              "Cardboard": "c",
+              "Glass": "d",
+              "Synthetic": "e",
+              "Metal": "h",
+              "Metal and glass": "j",
+              "Synthetic and glass": "k",
+              "Mixed collection": "m"
+            }
+          ]
+        },
+        "$MICROFORM": {
+          "Specific material designation": [
+            1,
+            {
+              "Aperture card": "a",
+              "Microfilm cartridge": "b",
+              "Microfilm cassette": "c",
+              "Microfilm reel": "d",
+              "Microfiche": "e",
+              "Microfiche cassette": "f",
+              "Microopaque": "g",
+              "Microfilm slip": "h",
+              "Micrcrofilm roll": "j"
+            }
+          ],
+          "Positive/negative aspect": [
+            3,
+            {
+              "Positive": "a",
+              "Negative": "b",
+              "Mixed polarity": "m"
+            }
+          ],
+          "Dimensions": [
+            4,
+            {
+              "8 mm.": "a",
+              "16 mm.": "d",
+              "35 mm.": "f",
+              "70 mm.": "g",
+              "105 mm.": "h",
+              "3x5 in. or 8x13 cm.": "l",
+              "4x6 in. or 11x15 cm.": "m",
+              "6x9 in. or 16x23 cm.": "o",
+              "3 1/4 x 7 3/8 in. or 9x19 cm.": "p"
+            }
+          ],
+          "Reduction ratio range": [
+            5,
+            {
+              "Low reduction": "a",
+              "Normal reduction": "b",
+              "High reduction": "c",
+              "Very high reduction": "d",
+              "Ultra high reduction": "e",
+              "Reduction rate varies": "v"
+            }
+          ],
+          "Reduction ratio": [
+            6,
+            8
+          ],
+          "Color": [
+            9,
+            {
+              "Black-and-white (or monochrome)": "b",
+              "Multicolored": "c"
+            }
+          ],
+          "Emulsion on film": [
+            10,
+            {
+              "Silver halide": "a",
+              "Diazo": "b",
+              "Vesicular": "c",
+              "Mixd emulsion": "m"
+            }
+          ],
+          "Generation": [
+            11,
+            {
+              "First generation (master)": "a",
+              "Printing master": "b",
+              "Service copy": "c",
+              "Mixed generation": "m"
+            }
+          ],
+          "Base of film": [
+            12,
+            {
+              "Safety base, undetermined": "a",
+              "Safety base, acetate undetermined": "c",
+              "Safety base, diacetate": "d",
+              "Safety base, polyester": "p",
+              "Safety base, mixed": "r",
+              "Safety base, triacetate": "t",
+              "Nitrate base": "i",
+              "Mixed base (nitrate and safety)": "m"
+            }
+          ]
+        },
+        "$NONPROJECTED GRAPHIC": {
+          "Specific material designation": [
+            1,
+            {
+              "Activity Card": "a",
+              "Collage": "c",
+              "Drawing": "d",
+              "Painting": "e",
+              "Photomechanical print": "f",
+              "Photonegative": "g",
+              "Photoprint": "h",
+              "Picture": "i",
+              "Print": "j",
+              "Poster": "k",
+              "Technical drawing": "l",
+              "Chart": "n",
+              "Flash card": "o",
+              "Postcard": "p",
+              "Icon": "q",
+              "Radiograph": "r",
+              "Study print": "s",
+              "Photograph, type unspecified": "v"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color": "a",
+              "Black-and-white": "b",
+              "Multicolored": "c",
+              "Hand colored": "h"
+            }
+          ],
+          "Primary support material": [
+            4,
+            {
+              "Canvas": "a",
+              "Bristol board": "b",
+              "Cardboard/illustration board": "c",
+              "Glass": "d",
+              "Synthetic": "e",
+              "Skin": "f",
+              "Textile": "g",
+              "Metal": "h",
+              "Plastic": "i",
+              "Vinyl": "l",
+              "Mixed collection": "m",
+              "Vellum": "n",
+              "Paper": "o",
+              "Plaster": "p",
+              "Hardboard": "q",
+              "Porcelain": "r",
+              "Stone": "s",
+              "Wood": "t",
+              "Leather": "v",
+              "Parchment": "w"
+            }
+          ],
+          "Secondary support material": [
+            5,
+            {
+              "No secondary support": "#",
+              "Canvas": "a",
+              "Bristol board": "b",
+              "Cardboard/illustration board": "c",
+              "Glass": "d",
+              "Synthetic": "e",
+              "Skin": "f",
+              "Textile": "g",
+              "Metal": "h",
+              "Plastic": "i",
+              "Vinyl": "l",
+              "Mixed collection": "m",
+              "Vellum": "n",
+              "Paper": "o",
+              "Plaster": "p",
+              "Hardboard": "q",
+              "Porcelain": "r",
+              "Stone": "s",
+              "Wood": "t",
+              "Leather": "v",
+              "Parchment": "w"
+            }
+          ]
+        },
+        "$MOTION PICTURE": {
+          "Specific material designation": [
+            1,
+            {
+              "Film cartridge": "c",
+              "Film cassette": "f",
+              "Film roll": "o",
+              "Film reel": "r"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "Black-and-white": "b",
+              "Multicolored": "c",
+              "Hand colored": "h"
+            }
+          ],
+          "Motion picture presentation format": [
+            4,
+            {
+              
+            }
+          ]
+        },
+        "Mixed": "m",
+        "Not applicable": "n",
+        "Unknown": "u",
+        "Unspecified": "u",
+        "Other": "z",
+        "No attempt to code": "|"
       }
     ]
   }
