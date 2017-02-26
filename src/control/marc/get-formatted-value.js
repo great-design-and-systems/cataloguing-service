@@ -1,27 +1,36 @@
 import lodash from 'lodash';
+const CODE_VALUE_REGEX = /{.*}/g;
 export default class GetFormattedValue {
     constructor(value, valueFormat, key) {
-        let keyFormat = lodash.find(valueFormat, (valF, fieldV)=> {
-            this.field = fieldV;
-            return valF === key
-        });
-        if (keyFormat) {
-            this.formattedValue = value;
-        } else {
-            this.field = key;
-            let valueArray = value.split('');
-            if (valueArray && valueArray.length) {
-                this.formattedValue = {};
-                lodash.forEach(valueFormat, (formatV, formatF)=> {
-                    this.formattedValue[formatF] = {};
-                    if (formatV instanceof Array) {
-                        this.formattedValue[formatF] = this.parseArrayFieldObject(formatV, value);
-                    } else {
-                        this.formattedValue[formatF] = value.charAt(formatV);
-                    }
-                });
+        console.log('GetFormattedValue.value', value);
+        console.log('GetFormattedValue.key', key);
+        const format = valueFormat[key];
+        console.log('GetFormattedValue.format', format);
+        if (value) {
+            let keyFormat = lodash.find(format, (valF, fieldV)=> {
+                this.field = fieldV;
+                return valF === key;
+            });
+            if (keyFormat) {
+                this.formattedValue = value;
+            } else {
+                this.field = key;
+                let valueArray = value.split('');
+                if (valueArray && valueArray.length) {
+                    this.formattedValue = {};
+                    lodash.forEach(format, (formatV, formatF)=> {
+                        this.formattedValue[formatF] = {};
+                        if (formatV instanceof Array) {
+                            this.formattedValue[formatF] = this.parseArrayFieldObject(formatV, value);
+                        }
+                        else {
+                            this.formattedValue[formatF] = value.charAt(formatV);
+                        }
+                    });
+                }
             }
         }
+
     }
 
     parseArrayFieldObject(fieldObject, value) {
@@ -38,6 +47,7 @@ export default class GetFormattedValue {
             format = fieldObject[2];
         }
         value = end ? value.substr(start, end) : value.charAt(start);
+
         if (format) {
             if (format instanceof Array) {
                 format.forEach((label, index)=> {
@@ -55,7 +65,7 @@ export default class GetFormattedValue {
         } else {
             result = value;
         }
-        return lodash.isEmpty(result) ? undefined : result;
+        return lodash.isEmpty(result) ? undefined : lodash.isEmpty(result) ? undefined : result;
     }
 
     getValue() {

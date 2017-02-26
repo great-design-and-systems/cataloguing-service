@@ -1,4 +1,3 @@
-import MarcDecoder from '../marc/marc-decoder';
 export default class SearchResponse {
     constructor(response) {
         this.totalRecords = 0;
@@ -20,8 +19,6 @@ export default class SearchResponse {
                     this.resultCount = 1;
                     this.data.push(new CatalogResponseItem(searchRetrieveResponse.records.record));
                 }
-                new MarcDecoder(this.data[0], (err, data)=> {
-                });
             }
         }
     }

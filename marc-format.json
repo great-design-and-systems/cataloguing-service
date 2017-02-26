@@ -530,7 +530,7 @@
             13,
             {
               "Access": "a",
-              "Preservation":"p",
+              "Preservation": "p",
               "Replacement": "r"
             }
           ]
@@ -650,7 +650,7 @@
           "Color": [
             3,
             {
-              "One color" : "a",
+              "One color": "a",
               "Black-and-white": "b",
               "Multicolored": "c",
               "Hand colored": "h"
@@ -921,7 +921,6 @@
           "Motion picture presentation format": [
             4,
             {
-              
             }
           ]
         },
@@ -931,6 +930,27 @@
         "Unspecified": "u",
         "Other": "z",
         "No attempt to code": "|"
+      }
+    ]
+  },
+  "datafield": {
+    "Title Statement": [
+      "245",
+      {
+        "Title": "{a}",
+        "Remainder of title": "{b}",
+        "Statement of responsibility, etc": "{c}",
+        "Designation of section": "{d}",
+        "Name of part/section": "{e}",
+        "Inclusive dates": "{f}",
+        "Bulk dates": "{g}",
+        "Medium": "{h}",
+        "Form": "{k}",
+        "Number of part/section of a work": "{n}",
+        "Name of part/section of a work": "{p}",
+        "Version": "{s}",
+        "Linkage": "{6}",
+        "Field link and sequence number": "{8}"
       }
     ]
   }

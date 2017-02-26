@@ -3,6 +3,7 @@ import {
     GDSDomainPaginateHelper,
 } from 'gds-config';
 
+import CatalogService from './catalog';
 import CategoryService from './categories';
 import DynamicService from './dynamic';
 import FieldService from './fields';
@@ -16,7 +17,7 @@ export default class CataloguingResource {
         const dynamicService = new DynamicService();
         const categoryService = new CategoryService(dynamicService);
         const searchService = new SearchService();
-
+        const catalogService = new CatalogService(dynamicService);
         app.get('/', (req, res) => {
             const domain = new GDSDomainDTO();
             domain.addPost('createCategory', 'http://' + req.headers.host + API + 'create-category');
@@ -38,15 +39,29 @@ export default class CataloguingResource {
             domain.addGet('searchByIsbn', 'http://' + req.headers.host + API + 'search-by-isbn/:isbn');
             domain.addGet('getSubjectsByIsbn', 'http://' + req.headers.host + API + 'get-subjects-by-isbn/:isbn');
             domain.addGet('searchOnline', 'http://' + req.headers.host + API + 'search-online/:source');
+            domain.addPost('importMarcData', 'http://' + req.headers.host + API + 'import-marc-data')
             res.status(200).send(domain);
         });
 
+        app.post(API + 'import-marc-data', (req, res) => {
+            catalogService.importMarcData(req.body, (err, result) => {
+                if (err) {
+                    res.status(500).send(new GDSDomainDTO('ERROR_MESSAGE',
+                        err.message
+                    ));
+                }
+                else {
+                    const importDomain = new GDSDomainDTO('IMPORT_MARC_DATA', result);
+                    res.status(200).send(importDomain);
+                }
+            });
+        });
         app.post(API + 'create-category', (req, res) => {
             categoryService.createCategory(req.body, (err, result) => {
                 if (err) {
                     res.status(500).send(new GDSDomainDTO('ERROR_MESSAGE',
                         err.message
-                    ))
+                    ));
                 } else {
                     const createDomain = new GDSDomainDTO('CREATE-CATEGORY', 'Category has been created');
                     createDomain.addGet('getCategoryById', 'http://' + req.headers.host + API + 'get-category-by-id/' + result._id);

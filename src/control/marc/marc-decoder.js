@@ -10,7 +10,8 @@ export default class MarcDecoder {
             } else {
                 const context = {
                     leader: marcData.leader,
-                    controlField: marcData.controlField
+                    controlField: marcData.controlField,
+                    dataField: marcData.dataField
                 };
                 new ParseFieldValue(lodash.keys(context), context, marcFormat, (err, data)=> {
                     if (err) {
