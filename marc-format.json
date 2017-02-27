@@ -2819,7 +2819,24 @@
             }
           ]
         }
-      } // end
+      }
+    ],
+    "PHYSICAL DESCRIPTION FIXED-FIELD FOR ARCHIVAL COLLECTION (VM) - [OBSOLETE]": [
+      "009",
+      {
+        "Genealogical stage": 0,
+        "Technical stage": 1,
+        "Color stage": 2,
+        "Film emulsion": 3,
+        "Film base": 4,
+        "Negative or positive sound": 5,
+        "Additional types of color": 6,
+        "Longitudinal shrinkage": 7,
+        "Perforation shrinkage": 8,
+        "Film deterioration": 9,
+        "Completeness": 10,
+        "Film inspection date": [11,14]
+      }
     ]
   },
   "datafield": {
