@@ -29,7 +29,8 @@
     "prestart": "babel src --out-dir dist",
     "start": "node dist/index.js",
     "container-start": "/bin/bash /app/scripts/start.sh",
-    "test": "mocha --compilers js:babel-core/register --recursive"
+    "test": "mocha --compilers js:babel-core/register --recursive",
+    "dev-test":"mocha --compilers js:babel-core/register --recursive --watch"
   },
   "repository": {
     "type": "git",

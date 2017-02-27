@@ -1,65 +1,34 @@
 import lodash from 'lodash';
 import GetFormattedValue from './get-formatted-value'
 export default class ParseFieldValue {
-    constructor(keys, context, marcFormat, callback) {
-        this.parseKeys(keys, context, {}, marcFormat, (err, result)=> {
-            if (err) {
-                callback(err);
-            } else {
-                callback(undefined, result);
-            }
-        });
+    constructor(context, marcFormat, callback) {
+        const rootNode = new ParseNode(null, null);
+        rootNode.setFormat(marcFormat);
+        try {
+            const keys = lodash.keys(context);
+            this.parseKeys(keys, context, rootNode);
+            callback(undefined, rootNode);
+        } catch (err) {
+            callback(err);
+        }
     }
 
-    parseKeys(keys, context, newContext, marcFormat, done) {
-        try {
-            const key = keys.shift();
-            console.log('key', key);
+    parseKeys(keys, context, parent) {
+        const key = keys.shift();
+        if (key) {
             const contextValue = context[key];
-            console.log('contextValue', contextValue);
+            const parseNodeValue = new ParseNode(parent, key);
             if (contextValue instanceof Object) {
                 const contextKeys = lodash.keys(contextValue);
-                this.parseKeys(contextKeys, contextValue, {}, marcFormat, (err, subContextResult)=> {
-                    if (err) {
-                        done(err);
-                    } else {
-                        console.log('parse result', subContextResult);
-                    }
-                });
-            } else {
-                const process = this.processKey(contextValue, marcFormat, key);
-                if (process.key && process.value) {
-                    newContext[process.key] = process.value;
+                if (contextKeys && contextKeys.length) {
+                    this.parseKeys(contextKeys, contextValue, parseNodeValue);
                 }
-            }
-            /*      if (key) {
-             const contextValue = context[key];
-             const format = marcFormat[key.toLowerCase()] || marcFormat;
-             if (contextValue && contextValue !== null) {
-             if (contextValue instanceof Object) {
-             const contextValueKeys = lodash.keys(contextValue);
-             this.parseKeys(contextValueKeys, contextValue, {}, format, (err, subNewContext)=> {
-             if (err) {
-             done(err);
-             } else {
-             newContext[key] = subNewContext;
-             }
-             });
-             } else {
-             const process = this.processKey(contextValue, format, key);
-             newContext[process.key] = process.value;
-             }
-             }
-             }*/
-
-            if (keys && keys.length > 0) {
-                this.parseKeys(keys, context, newContext, marcFormat, done);
             } else {
-                done(undefined, newContext);
+                parseNodeValue.setValue(contextValue);
             }
-
-        } catch (err) {
-            done(err);
+        }
+        if (keys && keys.length > 0) {
+            this.parseKeys(keys, context, parent);
         }
     }
 
@@ -70,4 +39,58 @@ export default class ParseFieldValue {
             value: getFormattedValue.getValue()
         };
     }
+}
+
+
+class ParseNode {
+
+    constructor(parent, key) {
+        this.children = [];
+        if (parent) {
+            parent.children.push(this);
+        }
+        this.parent = parent;
+        this.key = key;
+    }
+
+    setValue(value) {
+        this.value = value;
+    }
+
+    setFormat(format) {
+        this.format = format;
+    }
+
+    getChildren() {
+        return this.children;
+    }
+
+    getRoot() {
+        let rootKey;
+        if (this.parent) {
+            rootKey = this.parent.getRoot();
+        } else {
+            rootKey = this.key;
+        }
+        return rootKey;
+    }
+
+    getFormat() {
+        let newFormat = this.format;
+        let parent = this.parent;
+        const parentList = [];
+        while (parent && parent.key) {
+            parentList.push(parent.key);
+            parent = parent.getParent();
+        }
+        for (let i = parentList.length; i > 0; i--) {
+            newFormat = newFormat[parentList[i]];
+        }
+        return newFormat;
+    }
+
+    getParent() {
+        return this.parent;
+    }
+
 }

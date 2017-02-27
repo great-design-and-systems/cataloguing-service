@@ -71,8 +71,10 @@ const sampleMarcData = {
 describe('should decode marc', () => {
     it('parse marc', (done) => {
         new MarcDecoder(sampleMarcData, (err, result)=> {
-            console.log('err', err);
-            console.log('result', result);
+            const child = result.children[2];
+            console.log('child', child);
+            const format = child.getFormat();
+            console.log('format', format);
             done();
         });
     });

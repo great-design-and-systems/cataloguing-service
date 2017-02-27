@@ -13,7 +13,8 @@ export default class MarcDecoder {
                     controlField: marcData.controlField,
                     dataField: marcData.dataField
                 };
-                new ParseFieldValue(lodash.keys(context), context, marcFormat, (err, data)=> {
+
+                new ParseFieldValue(context, marcFormat, (err, data)=> {
                     if (err) {
                         callback(err);
                     } else {

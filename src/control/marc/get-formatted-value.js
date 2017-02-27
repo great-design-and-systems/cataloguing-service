@@ -2,10 +2,7 @@ import lodash from 'lodash';
 const CODE_VALUE_REGEX = /{.*}/g;
 export default class GetFormattedValue {
     constructor(value, valueFormat, key) {
-        console.log('GetFormattedValue.value', value);
-        console.log('GetFormattedValue.key', key);
         const format = valueFormat[key];
-        console.log('GetFormattedValue.format', format);
         if (value) {
             let keyFormat = lodash.find(format, (valF, fieldV)=> {
                 this.field = fieldV;
