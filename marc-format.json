@@ -1556,6 +1556,1270 @@
         "Other": "z",
         "No attempt to code": "|"
       }
+    ],
+    "DATA ELEMENTS": [
+      "008",
+      {
+        "$ALL MATERIALS": {
+          "Date entered on file": [
+            0,
+            5
+          ],
+          "Type of date/Publication status": [
+            6,
+            {
+              "No dates given; B.C. date involved": "b",
+              "Continuing resource currently published": "c",
+              "Actual date and copyright date [OBSOLETE]": "c",
+              "Continuing resource ceased publication": "d",
+              "Detailed date [OBSOLETE]": "d",
+              "Detailed date": "e",
+              "Inclusive dates of collection": "i",
+              "Range of years of bulk of collection": "k",
+              "Multiple dates": "m",
+              "Dates unknown": "n",
+              "Date of distribution/release/issue and production/recording session when different": "p",
+              "Questionable date": "q",
+              "Reprint/reissue date and original date": "r",
+              "Single known date/probable date": "s",
+              "Publication date and copyright date": "t",
+              "Continuing resource status unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Date 1": [
+            7,
+            10,
+            {
+              "Date digit": [
+                1,
+                9
+              ],
+              "Date element is not applicable": "#",
+              "Date element is totally or partially unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Date 2": [
+            11,
+            14,
+            {
+              "Date digit": [
+                1,
+                9
+              ],
+              "Date element is not applicable": "#",
+              "Date element is totally or partially unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Place of publication, production, or execution": [
+            15,
+            17
+          ],
+          "Language": [
+            35,
+            37
+          ],
+          "Modified record": [
+            38,
+            {
+              "Not modified": "#",
+              "Dashed-on information omitted": "d",
+              "Completely romanized/printed cards romanized": "o",
+              "Completely romanized/printed cards in script": "r",
+              "Shortened": "s",
+              "Missing characters": "x",
+              "No attempt to code": "|"
+            }
+          ],
+          "Cataloging source": [
+            39,
+            {
+              "National bibliographic agency": "#",
+              "National Agricultural Library [OBSOLETE]": "a",
+              "National Library of Medicine [OBSOLETE]": "b",
+              "Cooperative cataloging program": "c",
+              "Other": "d",
+              "Report to [OBSOLETE]": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$Books": {
+          "Illustrations": [
+            18,
+            21,
+            {
+              "No illustrations": "#",
+              "Illustrations": "a",
+              "Maps": "b",
+              "Portraits": "c",
+              "Charts": "d",
+              "Plans": "e",
+              "Plates": "f",
+              "Music": "g",
+              "Facsimiles": "h",
+              "Coats of arms": "i",
+              "Genealogical tables": "j",
+              "Forms": "k",
+              "Samples": "l",
+              "Phonodisc, phonowire, etc.": "m",
+              "Photographs": "o",
+              "Illuminations": "p",
+              "No attempt to code": "|"
+            }
+          ],
+          "Target audience": [
+            22,
+            {
+              "Unknown or not specified": "#",
+              "Preschool": "a",
+              "Primary": "b",
+              "Pre-adolescent": "c",
+              "Adolescent": "d",
+              "Adult": "e",
+              "Specialized": "f",
+              "General": "g",
+              "Juvenile": "j",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            23,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Punched paper tape [OBSOLETE]": "g",
+              "Magnetic tape [OBSOLETE]": "h",
+              "Multimedia [OBSOLETE]": "i",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "Other form of reproduction [OBSOLETE]": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Nature of contents": [
+            24,
+            27,
+            {
+              "No specified nature of contents": "#",
+              "Abstracts/summaries": "a",
+              "Bibliographies": "b",
+              "Catalogs": "c",
+              "Dictionaries": "d",
+              "Encyclopedias": "e",
+              "Handbooks": "f",
+              "Legal articles": "g",
+              "Handbooks [OBSOLETE]": "h",
+              "Indexes": "i",
+              "Patent document": "j",
+              "Discographies": "k",
+              "Legislation": "l",
+              "Theses": "m",
+              "Surveys of literature in a subject area": "n",
+              "Reviews": "o",
+              "Programmed texts": "p",
+              "Filmographies": "q",
+              "Directories": "r",
+              "Statistics": "s",
+              "Technical reports": "t",
+              "Standards/specifications": "u",
+              "Legal cases and case notes": "v",
+              "Law reports and digests": "w",
+              "Technical reports [OBSOLETE]": "x",
+              "Yearbooks": "y",
+              "Treaties": "z",
+              "Offprints": 2,
+              "Calendars": 5,
+              "Comics/graphic novels": 6,
+              "No attempt to code": "|"
+            }
+          ],
+          "Government publication": [
+            28,
+            {
+              "Not a government publication": "#",
+              "Autonomous or semi-autonomous component": "a",
+              "Multilocal": "c",
+              "Federal/national": "f",
+              "International intergovernmental": "i",
+              "Local": "l",
+              "Multistate": "m",
+              "Government publication--level undetermined [OBSOLETE]": "n",
+              "Government publication--level undetermined": "o",
+              "State, provincial, territorial, dependent, etc.": "s",
+              "Unknown if item is government publication": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Conference publication": [
+            29,
+            {
+              "Not a conference publication": 0,
+              "Conference publication": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Festschrift": [
+            30,
+            {
+              "Not a festschrift": 0,
+              "Festschrift": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Index": [
+            31,
+            {
+              "No index": 0,
+              "Index present": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Main entry in body of entry [OBSOLETE]": [
+            32,
+            {
+              "Main entry not in body of entry": 0,
+              "Main entry in body of entry": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Literary form": [
+            33,
+            {
+              "Not fiction (not further specified)": 0,
+              "Fiction (not further specified)": 1,
+              "Comic strips [OBSOLETE]": "c",
+              "Dramas": "d",
+              "Essays": "e",
+              "Novels": "f",
+              "Humor, satires, etc.": "h",
+              "Letters": "i",
+              "Short stories": "j",
+              "Mixed forms": "m",
+              "Poetry": "p",
+              "Speeches": "s",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Biography": [
+            34,
+            {
+              "No biographical material": "#",
+              "Autobiography": "a",
+              "Individual biography": "b",
+              "Collective biography": "c",
+              "Contains biographical information": "d",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$COMPUTER FILES": {
+          "Frequency [OBSOLETE]": [
+            18,
+            {
+              "No determinable frequency": "#",
+              "Annual": "a",
+              "Bimonthly": "b",
+              "Semiweekly": "c",
+              "Daily": "d",
+              "Biweekly": "e",
+              "Semiannual": "f",
+              "Biennial": "g",
+              "Triennial": "h",
+              "Three times a week": "i",
+              "Three times a month": "j",
+              "Monthly": "m",
+              "Not applicable": "n",
+              "Quarterly": "q",
+              "Semimonthly": "s",
+              "Three times a year": "t",
+              "Unknown": "u",
+              "Weekly": "w",
+              "Other frequencies": "z"
+            }
+          ],
+          "Regularity [OBSOLETE]": [
+            19,
+            {
+              "Not applicable": "#",
+              "Normalized irregular": "n",
+              "Regular": "r",
+              "Unknown": "u",
+              "Completely irregular": "x"
+            }
+          ],
+          "Target audience": [
+            22,
+            {
+              "Unknown or not specified": "#",
+              "Preschool": "a",
+              "Primary": "b",
+              "Pre-adolescent": "c",
+              "Adolescent": "d",
+              "Adult": "e",
+              "Specialized": "f",
+              "General": "g",
+              "Juvenile": "j",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            23,
+            {
+              "Online": "o",
+              "Direct electronic": "q"
+            }
+          ],
+          "Type of computer file": [
+            26,
+            {
+              "Numeric data": "a",
+              "Computer program": "b",
+              "Representational": "c",
+              "Document": "d",
+              "Bibliographic data": "e",
+              "Font": "f",
+              "Game": "g",
+              "Sound": "h",
+              "Interactive multimedia": "i",
+              "Online system or service": "j",
+              "Combination": "m",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Type of machine [OBSOLETE]": [
+            27,
+            {
+              "Computer readable": "a",
+              "Other": "z"
+            }
+          ],
+          "Government publication": [
+            28,
+            {
+              "Not a government publication": "#",
+              "Autonomous or semi-autonomous component": "a",
+              "Multilocal": "c",
+              "Federal/national": "f",
+              "International intergovernmental": "i",
+              "Local": "l",
+              "Multistate": "m",
+              "Government publication--level undetermined": "o",
+              "State, provincial, territorial, dependent, etc.": "s",
+              "Unknown if item is government publication": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$Maps": {
+          "Relief": [
+            18,
+            21,
+            {
+              "No relief shown": "#",
+              "Contours": "a",
+              "Shading": "b",
+              "Gradient and bathymetric tints": "c",
+              "Hachures": "d",
+              "Bathymetry/soundings": "e",
+              "Form lines": "f",
+              "Spot heights": "g",
+              "Color [OBSOLETE]": "h",
+              "Pictorially": "i",
+              "Land forms": "j",
+              "Bathymetry/isolines": "k",
+              "Rock drawings": "m",
+              "Other relief type": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Projection": [
+            22,
+            23,
+            {
+              "Projection not specified": "##",
+              "Aitoff": "aa",
+              "Gnomic": "ab",
+              "Lambert's azimuthal equal area": "ac",
+              "Orthographic": "ad",
+              "Azimuthal equidistant": "ae",
+              "Stereographic": "af",
+              "General vertical near-sided": "ag",
+              "Modified stereographic for Alaska": "am",
+              "Chamberlin trimetric": "an",
+              "Polar stereographic": "ap",
+              "Azimuthal, specific type unknown": "au",
+              "Azimuthal, other": "az",
+              "Gall": "ba",
+              "Goode's homolographic": "bb",
+              "Lambert's cylindrical equal area": "bc",
+              "Mercator": "bd",
+              "Miller": "be",
+              "Mollweide": "bf",
+              "Sinusoidal": "bg",
+              "Transverse Mercator": "bh",
+              "Gauss-Kruger": "bi",
+              "Equirectangular": "bj",
+              "Krovak": "bk",
+              "Cassini-Soldner": "bl",
+              "Oblique Mercator": "bo",
+              "Robinson": "br",
+              "Space oblique Mercator": "bs",
+              "Cylindrical, specific type unknown": "bu",
+              "Cylindrical, other": "bz",
+              "Alber's equal area": "ca",
+              "Bonne": "cb",
+              "Lambert's conformal conic": "cc",
+              "Equidistant conic": "ce",
+              "Polyconic": "cp",
+              "Conic, specific type unknown": "cu",
+              "Conic, other": "cz",
+              "Armadillo": "da",
+              "Butterfly": "db",
+              "Eckert": "dc",
+              "Goode's homolosine": "dd",
+              "Miller's bipolar oblique conformal conic": "de",
+              "Van Der Grinten": "df",
+              "Dimaxion": "dg",
+              "Cordiform": "dh",
+              "Lambert conformal": "dl",
+              "Other": "zz",
+              "No attempt to code": "|"
+            }
+          ],
+          "Prime meridian [OBSOLETE]": [
+            24,
+            {
+              "Prime meridian not specified": "#",
+              "Greenwich": "e",
+              "Ferro": "f",
+              "Paris": "g",
+              "Other [OBSOLETE]": "h",
+              "Philadelphia": "p",
+              "Washington, D.C.": "w",
+              "Other": "z"
+            }
+          ],
+          "Type of cartographic material": [
+            25,
+            {
+              "Single map": "a",
+              "Map series": "b",
+              "Map serial": "c",
+              "Globe": "d",
+              "Atlas": "e",
+              "Separate map supplement to another work": "f",
+              "Map bound as part of another work": "g",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Publisher code [OBSOLETE]": [
+            26,
+            76
+          ],
+          "Government publication": [
+            28,
+            {
+              "Not a government publication": "#",
+              "Autonomous or semi-autonomous component": "a",
+              "Multilocal": "c",
+              "Federal/national": "f",
+              "International intergovernmental": "i",
+              "Local": "l",
+              "Multistate": "m",
+              "Government publication--level undetermined": "o",
+              "State, provincial, territorial, dependent, etc.": "s",
+              "Unknown if item is government publication": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            29,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "No attempt to code": "|"
+            }
+          ],
+          "Index": [
+            31,
+            {
+              "No index": 0,
+              "Index present": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Citation indicator [OBSOLETE]": 32,
+          "Special format characteristics": [
+            33,
+            34,
+            {
+              "No specified special format characteristics": "#",
+              "Photocopy, blue line print [OBSOLETE]": "a",
+              "Photocopy [OBSOLETE]": "b",
+              "Negative photocopy [OBSOLETE]": "c",
+              "Film negative [OBSOLETE]": "d",
+              "Manuscript": "e",
+              "Facsimile [OBSOLETE]": "f",
+              "Relief model [OBSOLETE]": "g",
+              "Rare [OBSOLETE]": "h",
+              "Picture card, post card": "j",
+              "Calendar": "k",
+              "Puzzle": "l",
+              "Braille [OBSOLETE]": "m",
+              "Game": "n",
+              "Wall map": "o",
+              "Playing cards": "p",
+              "Large print [OBSOLETE]": "q",
+              "Loose-leaf": "r",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$MUSIC": {
+          "Form of composition": [
+            18,
+            19,
+            {
+              "Anthems": "an",
+              "Ballads": "bd",
+              "Bluegrass music": "bg",
+              "Blues": "bl",
+              "Ballets": "bt",
+              "Chaconnes": "ca",
+              "Chants, Other religions": "cb",
+              "Chant, Christian": "cc",
+              "Concerti grossi": "cg",
+              "Chorales": "ch",
+              "Chorale preludes": "cl",
+              "Canons and rounds": "cn",
+              "Concertos": "co",
+              "Chansons, polyphonic": "cp",
+              "Carols": "cr",
+              "Chance compositions": "cs",
+              "Cantatas": "ct",
+              "Country music": "cy",
+              "Canzonas": "cz",
+              "Dance forms": "df",
+              "Divertimentos, serenades, cassations, divertissements, notturni": "dv",
+              "Fugues": "fg",
+              "Flamenco": "fl",
+              "Folk music": "fm",
+              "Fantasias": "ft",
+              "Gospel music": "gm",
+              "Hymns": "hy",
+              "Jazz": "jz",
+              "Musical revues and comedies": "mc",
+              "Madrigals": "md",
+              "Minuets": "mi",
+              "Motets": "mo",
+              "Motion picture music": "mp",
+              "Marches": "mr",
+              "Masses": "ms",
+              "Multiple forms": "mu",
+              "Mazurkas": "mz",
+              "Nocturnes": "nc",
+              "Not applicable": "nn",
+              "Operas": "op",
+              "Oratorios": "or",
+              "Overtures": "ov",
+              "Program music": "pg",
+              "Passion music": "pm",
+              "Polonaises": "po",
+              "Popular music": "pp",
+              "Preludes": "pr",
+              "Passacaglias": "ps",
+              "Part-songs": "pt",
+              "Pavans": "pv",
+              "Rock music": "rc",
+              "Rondos": "rd",
+              "Ragtime music": "rg",
+              "Ricercars": "ri",
+              "Rhapsodies": "rp",
+              "Requiems": "rq",
+              "Square dance music": "sd",
+              "Songs": "sg",
+              "Sonatas": "sn",
+              "Symphonic poems": "sp",
+              "Studies and exercises": "st",
+              "Suites": "su",
+              "Symphonies": "sy",
+              "Toccatas": "tc",
+              "Teatro lirico": "tl",
+              "Trio-sonatas": "ts",
+              "Unknown": "uu",
+              "Villancicos": "vi",
+              "Variations": "vr",
+              "Waltzes": "wz",
+              "Zarzuelas": "za",
+              "Other": "zz",
+              "No attempt to code": "||"
+            }
+          ],
+          "Format of music": [
+            20,
+            {
+              "Full score": "a",
+              "Miniature or study score": "b",
+              "Accompaniment reduced for keyboard": "c",
+              "Voice score with accompaniment omitted": "d",
+              "Condensed score or piano-conductor score": "e",
+              "Close score": "g",
+              "Chorus score": "h",
+              "Condensed score": "i",
+              "Performer-conductor part": "j",
+              "Vocal score": "k",
+              "Score": "l",
+              "Multiple score formats": "m",
+              "Not applicable": "n",
+              "Piano score": "p",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Music parts": [
+            21,
+            {
+              "No parts in hand or not specified": "#",
+              "Instrumental and vocal parts": "d",
+              "Instrumental parts": "e",
+              "Vocal parts": "f",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Existence of parts [OBSOLETE]": [
+            21,
+            {
+              "No parts exist": "#",
+              "Parts exist": "a",
+              "Not applicable": "n",
+              "Unknown": "u"
+            }
+          ],
+          "Target audience": [
+            22,
+            {
+              "Unknown or not specified": "#",
+              "Preschool": "a",
+              "Primary": "b",
+              "Pre-adolescent": "c",
+              "Adolescent": "d",
+              "Adult": "e",
+              "Specialized": "f",
+              "General": "g",
+              "Juvenile": "j",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            23,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Punched paper tape [   ]": "g",
+              "Magnetic tape [OBSOLETE]": "h",
+              "Multimedia [OBSOLETE]": "i",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "Other form of reproduction [OBSOLETE]": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Accompanying matter": [
+            24,
+            29,
+            {
+              "No accompanying matter": "#",
+              "Discography": "a",
+              "Bibliography": "b",
+              "Thematic index": "c",
+              "Libretto or text": "d",
+              "Biography of composer or author": "e",
+              "Biography of performer or history of ensemble": "f",
+              "Technical and/or historical information on instruments": "g",
+              "Technical information on music": "h",
+              "Historical information": "i",
+              "Historical information other than music [OBSOLETE]": "j",
+              "Ethnological information": "k",
+              "Not applicable [OBSOLETE]": "n",
+              "Instructional materials": "r",
+              "Music": "s",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Literary text for sound recordings": [
+            30,
+            31,
+            {
+              "Item is a musical sound recording": "#",
+              "Autobiography": "a",
+              "Biography": "b",
+              "Conference proceedings": "c",
+              "Drama": "d",
+              "Essays": "e",
+              "Fiction": "f",
+              "Reporting": "g",
+              "History": "h",
+              "Instruction": "i",
+              "Language instruction": "j",
+              "Comedy": "k",
+              "Lectures, speeches": "l",
+              "Memoirs": "m",
+              "Not applicable": "n",
+              "Folktales": "o",
+              "Poetry": "p",
+              "Rehearsals": "r",
+              "Sounds": "s",
+              "Interviews": "t",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Main entry in body of entry [OBSOLETE]": [
+            32,
+            {
+              "Main entry not in body of entry": 0,
+              "Main entry in body of entry": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Transposition and arrangement": [
+            33,
+            {
+              "Not arrangement or transposition or not specified": "#",
+              "Transposition": "a",
+              "Arrangement": "b",
+              "Both transposed and arranged": "c",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$CONTINUING RESOURCES": {
+          "Frequency": [
+            18,
+            {
+              "No determinable frequency": "#",
+              "Annual": "a",
+              "Bimonthly": "b",
+              "Semiweekly": "c",
+              "Daily": "d",
+              "Biweekly": "e",
+              "Semiannual": "f",
+              "Biennial": "g",
+              "Triennial": "h",
+              "Three times a week": "i",
+              "Three times a month": "j",
+              "Continuously updated": "k",
+              "Monthly": "m",
+              "Quarterly": "q",
+              "Semimonthly": "s",
+              "Three times a year": "t",
+              "Unknown": "u",
+              "Weekly": "w",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Regularity": [
+            19,
+            {
+              "Normalized irregular": "n",
+              "Regular": "r",
+              "Unknown": "u",
+              "Completely irregular": "x",
+              "No attempt to code": "|"
+            }
+          ],
+          "ISSN center [OBSOLETE]": [
+            20,
+            {
+              "No ISSN center code assigned": "#",
+              "International Center": 0,
+              "United States": 1,
+              "United Kingdom": 2,
+              "Australia [OBSOLETE]": 3,
+              "Canada": 4,
+              "Moscow Regional Centre [OBSOLETE]": 5,
+              "Federal Republic of Germany [OBSOLETE]": 6,
+              "France [OBSOLETE]": 7,
+              "Argentina [OBSOLETE]": 8,
+              "Japan [OBSOLETE]": 9,
+              "Unknown [OBSOLETE]": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Type of continuing resource": [
+            21,
+            {
+              "None of the following": "#",
+              "Updating database": "d",
+              "Updating loose-leaf": "l",
+              "Monographic series": "m",
+              "Newspaper": "n",
+              "Periodical": "p",
+              "Updating Web site": "w",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of original item": [
+            22,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Newspaper format": "e",
+              "Braille": "f",
+              "Punched paper tape [OBSOLETE]": "g",
+              "Magnetic tape [OBSOLETE]": "h",
+              "Multimedia [OBSOLETE]": "i",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Electronic": "s",
+              "Other physical medium [OBSOLETE]": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            23,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Punched paper tape [OBSOLETE]": "g",
+              "Magnetic tape [OBSOLETE]": "h",
+              "Multimedia [OBSOLETE]": "i",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "Other form of reproduction [OBSOLETE]": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Nature of entire work": [
+            24,
+            {
+              "No specified nature of entire work": "#",
+              "Abstracts/summaries": "a",
+              "Bibliographies": "b",
+              "Catalogs": "c",
+              "Dictionaries": "d",
+              "Encyclopedias": "e",
+              "Handbooks": "f",
+              "Legal articles": "g",
+              "Biography": "h",
+              "Indexes": "i",
+              "Discographies": "k",
+              "Legislation": "l",
+              "Theses": "m",
+              "Surveys of literature in a subject area": "n",
+              "Legal cases and case notes [OBSOLETE]": "n",
+              "Reviews": "o",
+              "Programmed texts": "p",
+              "Filmographies": "q",
+              "Directories": "r",
+              "Statistics": "s",
+              "Technical reports": "t",
+              "Standards/specifications": "u",
+              "Legal cases and case notes": "v",
+              "Law reports and digests": "w",
+              "Yearbooks": "y",
+              "Treaties": "z",
+              "Calendars": 5,
+              "Comics/graphic novels": 6,
+              "No attempt to code": "|"
+            }
+          ],
+          "Nature of contents": [
+            25,
+            27,
+            {
+              "No specified nature of contents": "#",
+              "Abstracts/summaries": "a",
+              "Bibliographies": "b",
+              "Catalogs": "c",
+              "Dictionaries": "d",
+              "Encyclopedias": "e",
+              "Handbooks": "f",
+              "Legal articles": "g",
+              "Biography": "h",
+              "Indexes": "i",
+              "Discographies": "k",
+              "Legislation": "l",
+              "Theses": "m",
+              "Surveys of literature in a subject area": "n",
+              "Legal cases and case notes [OBSOLETE]": "n",
+              "Reviews": "o",
+              "Programmed texts": "p",
+              "Filmographies": "q",
+              "Directories": "r",
+              "Statistics": "s",
+              "Technical reports": "t",
+              "Standards/specifications": "u",
+              "Legal cases and case notes": "v",
+              "Law reports and digests": "w",
+              "Yearbooks": "y",
+              "Treaties": "z",
+              "Calendars": 5,
+              "Comics/graphic novels": 6,
+              "No attempt to code": "|"
+            }
+          ],
+          "Government publication": [
+            28,
+            {
+              "Not a government publication": "#",
+              "Autonomous or semi-autonomous component": "a",
+              "Multilocal": "c",
+              "Federal/national": "f",
+              "International intergovernmental": "i",
+              "Local": "l",
+              "Multistate": "m",
+              "Government publication--level undetermined [OBSOLETE]": "n",
+              "Government publication--level undetermined": "o",
+              "State, provincial, territorial, dependent,etc.": "s",
+              "Unknown if item is government publication": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Conference publication": [
+            29,
+            {
+              "Not a conference publication": 0,
+              "Conference publication": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Title page availability [OBSOLETE]": [
+            30,
+            {
+              "No separate title page issued": "#",
+              "In last issue of volume, loose": "a",
+              "In last issue of volume, attached": "b",
+              "In first issue of next volume, loose": "c",
+              "In first issue of next volume, attached": "d",
+              "Published separately, free upon request": "e",
+              "Published separately, free, automatically sent": "f",
+              "Published separately, purchase, request": "g",
+              "Unknown": "u",
+              "Other title page availability": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Index availability [OBSOLETE]": [
+            31,
+            {
+              "No index published": "#",
+              "Each issue contains index to its own contents (no volume index), loose": "a",
+              "In last issue of volume, loose, separately paged": "b",
+              "In last issue of volume, loose, unpaged": "c",
+              "In last issue of volume, attached": "d",
+              "In first issue of next volume, loose, separately paged": "e",
+              "In first issue of next volume, loose, unpaged": "f",
+              "In first issue of next volume, attached": "g",
+              "Published separately, free, automatically sent": "h",
+              "Published separately, free, upon request": "i",
+              "Published separately, bound from publisher, free, automatically sent": "j",
+              "Published separately, bound from publisher, free, upon request": "k",
+              "Received separately, bound from publisher": "l",
+              "Supplement or subseries, indexed in parent journal index": "m",
+              "Unknown": "u",
+              "Other index availability": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Cumulative index availability [OBSOLETE]": [
+            32,
+            {
+              "No cumulative index available": 0,
+              "Cumulative index available": 1,
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Original alphabet or script of title": [
+            33,
+            {
+              "No alphabet or script given/no key title": "#",
+              "Basic roman": "a",
+              "Extended roman": "b",
+              "Cyrillic": "c",
+              "Japanese": "d",
+              "Chinese": "e",
+              "Arabic": "f",
+              "Greek": "g",
+              "Hebrew": "h",
+              "Thai": "i",
+              "Devanagari": "j",
+              "Korean": "k",
+              "Tamil": "l",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Entry convention": [
+            34,
+            {
+              "Successive entry": 0,
+              "Latest entry": 1,
+              "Integrated entry": 2,
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$VISUAL MATERIALS": {
+          "Running time for motion pictures and videorecordings": [
+            18,
+            20,
+            {
+              "Running time exceeds three characters": 0,
+              "Running time": [
+                1,
+                999
+              ],
+              "Running time unknown": "---",
+              "Not applicable": "nnn",
+              "No attempt to code": "|||"
+            }
+          ],
+          "In LC collection [OBSOLETE]": [
+            21,
+            {
+              "Not in LC": "#",
+              "In LC, print note": "a",
+              "In LC, do not print note": "b",
+              "Unknown": "u"
+            }
+          ],
+          "Target audience": [
+            22,
+            {
+              "Unknown or not specified": "#",
+              "Preschool": "a",
+              "Primary": "b",
+              "Pre-adolescent": "c",
+              "Adolescent": "d",
+              "Adult": "e",
+              "Specialized": "f",
+              "General": "g",
+              "Juvenile": "j",
+              "No attempt to code": "|"
+            }
+          ],
+          "Accompanying matter [OBSOLETE]": [
+            23,
+            27,
+            {
+              "No accompanying matter": "#",
+              "No [OBSOLETE]": 0,
+              "Yes [OBSOLETE]": 1,
+              "Stills": "l",
+              "Script material": "m",
+              "Posters": "o",
+              "Pressbooks": "p",
+              "Lobby cards": "q",
+              "Instructional materials": "r",
+              "Music": "s",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Government publication": [
+            28,
+            {
+              "Not a government publication": "#",
+              "Autonomous or semi-autonomous component": "a",
+              "Multilocal": "c",
+              "Federal/national": "f",
+              "International intergovernmental": "i",
+              "Local": "l",
+              "Multistate": "m",
+              "Government publication--level undetermined [OBSOLETE]": "n",
+              "Government publication--level undetermined": "o",
+              "State, provincial, territorial, dependent, etc.": "s",
+              "Unknown if item is government publication": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Form of item": [
+            29,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Online": "o",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "No attempt to code": "|"
+            }
+          ],
+          "Main entry in body of entry [OBSOLETE]": [
+            32,
+            {
+              "Main entry not in body of entry": 0,
+              "Main entry in body of entry": 1,
+              "No attempt to code": "|"
+            }
+          ],
+          "Type of visual material": [
+            33,
+            {
+              "Art original": "a",
+              "Kit": "b",
+              "Art reproduction": "c",
+              "Diorama": "d",
+              "Electronic videorecording [OBSOLETE]": "e",
+              "Filmstrip": "f",
+              "Game": "g",
+              "Picture": "i",
+              "Graphic": "k",
+              "Technical drawing": "l",
+              "Motion picture": "m",
+              "Chart": "n",
+              "Flash card": "o",
+              "Microscope slide": "p",
+              "Model": "q",
+              "Realia": "r",
+              "Slide": "s",
+              "Transparency": "t",
+              "Videorecording": "v",
+              "Toy": "w",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Technique": [
+            34,
+            {
+              "Not applicable [OBSOLETE]": "#",
+              "Animation": "a",
+              "Animation and live action": "c",
+              "Live action": "l",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other technique": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$MIXED MATERIALS": {
+          "Form of item": [
+            23,
+            {
+              "None of the following": "#",
+              "Microfilm": "a",
+              "Microfiche": "b",
+              "Microopaque": "c",
+              "Large print": "d",
+              "Braille": "f",
+              "Punched paper tape [OBSOLETE]": "g",
+              "Magnetic tape [OBSOLETE]": "h",
+              "Multimedia [OBSOLETE]": "i",
+              "Handwritten transcript [OBSOLETE]": "j",
+              "Online": "o",
+              "Photocopy [OBSOLETE]": "p",
+              "Direct electronic": "q",
+              "Regular print reproduction": "r",
+              "Electronic": "s",
+              "Typewritten transcript [OBSOLETE]": "t",
+              "Other form of reproduction [OBSOLETE]": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Case file indicator [OBSOLETE]": [
+            30,
+            {
+              "No case file exists": "#",
+              "Case file exists": "c"
+            }
+          ],
+          "Processing status code [OBSOLETE]": [
+            32,
+            {
+              "Collection not in library": "a",
+              "Completely processed": "b",
+              "Processed but with unprocessed additions": "c",
+              "Requires processing": "d",
+              "Totally unprocessed": "e",
+              "Under total cloture": "f",
+              "Unknown": "u"
+            }
+          ],
+          "Collection status code [OBSOLETE]": [
+            33,
+            {
+              "Discrete grouping of material": "a",
+              "Accession": "b",
+              "Active solicitation": "c",
+              "Solicitation unsuccessful": "d",
+              "Information file only": "e",
+              "Unknown": "u"
+            }
+          ],
+          "Level of collection control code [OBSOLETE]": [
+            34,
+            {
+              "Control on collection level": "a",
+              "Control by series": "b",
+              "Control by container": "c",
+              "Control by folder": "d",
+              "Control by item": "e",
+              "Unknown": "u"
+            }
+          ]
+        }
+      } // end
     ]
   },
   "datafield": {
