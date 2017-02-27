@@ -921,6 +921,631 @@
           "Motion picture presentation format": [
             4,
             {
+              "Standard sound aperture (reduced frame)": "a",
+              "Nonanamorphic (wide-screen)": "b",
+              "3D": "c",
+              "Anamorphic (wide-screen)": "d",
+              "Other wide-screen format": "e",
+              "Standard silent aperture (full frame)": "f"
+            }
+          ],
+          "Sound on medium or separate": [
+            5,
+            {
+              "No sound (silent)": "#",
+              "Sound on medium": "a",
+              "Sound separate from medium": "b"
+            }
+          ],
+          "Medium for sound": [
+            6,
+            {
+              "No sound (silent)": "#",
+              "Optical sound track on motion picture film": "a",
+              "Magnetic sound track on motion picture film": "b",
+              "Magnetic audio tape in cartridge": "c",
+              "Sound disc": "d",
+              "Magnetic audio tape on reel": "e",
+              "Magnetic audio tape in cassette": "f",
+              "Optical and magnetic sound track on motion picture film": "g",
+              "Video tape": "h",
+              "Videodisc": "i"
+            }
+          ],
+          "Dimensions": [
+            7,
+            {
+              "Standard 8 mm.": "a",
+              "Super 8 mm./single 8 mm.": "b",
+              "9.5 mm.": "c",
+              "16 mm.": "d",
+              "28 mm.": "e",
+              "35 mm.": "f",
+              "70 mm.": "g"
+            }
+          ],
+          "Configuration of playback channels": [
+            8,
+            {
+              "Mixed": "k",
+              "Monaural": "m",
+              "Not applicable": "n",
+              "Quadraphonic, multichannel, or surround": "q",
+              "Stereophonic": "s"
+            }
+          ],
+          "Production elements": [
+            9,
+            {
+              "Workprint": "a",
+              "Trims": "b",
+              "Outtakes": "c",
+              "Rushes": "d",
+              "Mixing tracks": "e",
+              "Title bands/intertitle rolls": "f",
+              "Production rolls": "g"
+            }
+          ],
+          "Positive/negative aspect": [
+            10,
+            {
+              "Positive": "a",
+              "Negative": "b"
+            }
+          ],
+          "Generation": [
+            11,
+            {
+              "Duplicate": "d",
+              "Master": "e",
+              "Original": "o",
+              "Reference print/viewing copy": "r",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Base of film": [
+            12,
+            {
+              "Safety base, undetermined": "a",
+              "Safety base, acetate undetermined": "c",
+              "Safety base, diacetate": "d",
+              "Safety base, polyester": "p",
+              "Safety base, mixed": "r",
+              "Safety base, triacetate": "t",
+              "Nitrate base": "i",
+              "Mixed base (nitrate and safety)": "m",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Refined categories of color": [
+            13,
+            {
+              "3 layer color": "a",
+              "2 color, single strip": "b",
+              "Undetermined 2 color": "c",
+              "Undetermined 3 color": "d",
+              "3 strip color": "e",
+              "2 strip color": "f",
+              "Red strip": "g",
+              "Blue or green strip": "h",
+              "Cyan strip": "i",
+              "Magenta strip": "j",
+              "Yellow strip": "k",
+              "S E N 2": "l",
+              "S E N 3": "m",
+              "Not applicable": "n",
+              "Sepia tone": "p",
+              "Other tone": "q",
+              "Tint": "r",
+              "Tinted and toned": "s",
+              "Stencil color": "t",
+              "Unknown": "u",
+              "Hand colored": "v",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Kind of color stock or print": [
+            14,
+            {
+              "Imbibition dye transfer prints": "a",
+              "Three layer stock": "b",
+              "Three layer stock, low fade": "c",
+              "Duplitized stock": "d",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Deterioration stage": [
+            15,
+            {
+              "None apparent": "a",
+              "Nitrate: suspicious odor": "b",
+              "Nitrate: pungent odor": "c",
+              "Nitrate: brownish, discoloration, fading, dusty": "d",
+              "Nitrate: sticky": "e",
+              "Nitrate: frothy, bubbles, blisters": "f",
+              "Nitrate: congealed": "g",
+              "Nitrate: powder": "h",
+              "Non-nitrate: detectable deterioration (diacetate odor)": "k",
+              "Non-nitrate: advanced deterioration": "l",
+              "Non-nitrate: disaster": "m",
+              "No attempt to code": "|"
+            }
+          ],
+          "Completeness": [
+            16,
+            {
+              "Complete": "c",
+              "Incomplete": "i",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Film inspection date": [
+            17,
+            22
+          ]
+        },
+        "$KIT": {
+          "Specific material designation": [
+            1,
+            {
+              "Unspecified": "u"
+            }
+          ]
+        },
+        "$NOTATED MUSIC": {
+          "Specific material designation": [
+            1,
+            {
+              "Unspecified": "u"
+            }
+          ]
+        },
+        "$REMOTE-SENSING IMAGE": {
+          "Specific material designation": [
+            1,
+            {
+              "Unspecified": "u"
+            }
+          ],
+          "Altitude of sensor": [
+            3,
+            {
+              "Surface": "a",
+              "Airborne": "b",
+              "Spaceborne": "c",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Attitude of sensor": [
+            4,
+            {
+              "Low oblique": "a",
+              "High oblique": "b",
+              "Vertical": "c",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Cloud cover": [
+            5,
+            {
+              "0-9%": 0,
+              "10-19%": 1,
+              "20-29%": 2,
+              "30-39%": 3,
+              "40-49%": 4,
+              "50-59%": 5,
+              "60-69%": 6,
+              "70-79%": 7,
+              "80-89%": 8,
+              "90-100%": 9,
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Platform construction type": [
+            6,
+            {
+              "Balloon": "a",
+              "Aircraft--low altitude": "b",
+              "Aircraft--medium altitude": "c",
+              "Aircraft--high altitude": "d",
+              "Manned spacecraft": "e",
+              "Unmanned spacecraft": "f",
+              "Land-based remote-sensing device": "g",
+              "Water surface-based remote-sensing device": "h",
+              "Submersible remote-sensing device": "i",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Platform use category": [
+            7,
+            {
+              "Meteorological": "a",
+              "Surface observing": "b",
+              "Space observing": "c",
+              "Mixed uses": "m",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Sensor type": [
+            8,
+            {
+              "Active": "a",
+              "Passive": "b",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Data type": [
+            9,
+            {
+              "Visible light": "aa",
+              "Near infrared": "da",
+              "Middle infrared": "db",
+              "Far infrared": "dc",
+              "Thermal infrared": "dd",
+              "Shortwave infrared (SWIR)": "de",
+              "Reflective infrared": "df",
+              "Combinations": "dv",
+              "Other infrared data": "dz",
+              "Sidelooking airborne radar (SLAR)": "ga",
+              "Synthetic aperture radar (SAR)-Single frequency": "gb",
+              "SAR-multi-frequency (multichannel)": "gc",
+              "SAR-like polarization": "gd",
+              "SAR-cross polarization": "ge",
+              "Infometric SAR": "gf",
+              "polarmetric SAR": "gg",
+              "Passive microwave mapping": "gu",
+              "Other microwave data": "gz",
+              "Far ultraviolet": "ja",
+              "Middle ultraviolet": "jb",
+              "Near ultraviolet": "jc",
+              "Ultraviolet combinations": "jv",
+              "Other ultraviolet data": "jz",
+              "Multi-spectral, multidata": "ma",
+              "Multi-temporal": "mb",
+              "Combination of various data types": "mm",
+              "Not applicable": "nn",
+              "Sonar--water depth": "pa",
+              "Sonar--bottom topography images, sidescan": "pb",
+              "Sonar--bottom topography, near surface": "pc",
+              "Sonar--bottom topography, near bottom": "pd",
+              "Seismic surveys": "pe",
+              "Other acoustical data": "pz",
+              "Gravity anomalies (general)": "ra",
+              "Free-air": "rb",
+              "Bouger": "rc",
+              "Isostatic": "rd",
+              "Magnetic field": "sa",
+              "radiometric surveys": "ta",
+              "Unknown": "uu",
+              "Other": "zz",
+              "No attempt to code": "||"
+            }
+          ]
+        },
+        "$SOUND RECORDING": {
+          "Specific material designation": [
+            1,
+            {
+              "Sound disc": "d",
+              "Cylinder": "e",
+              "Sound cartridge": "g",
+              "Sound-track film": "i",
+              "Roll": "q",
+              "Remote": "r",
+              "Sound cassette": "s",
+              "Sound-tape reel": "t",
+              "Unspecified": "u",
+              "Wire recording": "w",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Speed": [
+            3,
+            {
+              "16 rpm": "a",
+              "33 1/3 rpm": "b",
+              "45 rpm": "c",
+              "78 rpm": "d",
+              "8 rpm": "e",
+              "1.4 m. per sec.": "f",
+              "120 rpm": "h",
+              "160 rpm": "i",
+              "15/16 ips": "k",
+              "1 7/8 ips": "l",
+              "3 3/4 ips": "m",
+              "Not applicable": "n",
+              "7 1/2 ips": "o",
+              "15 ips": "p",
+              "30 ips": "r",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Configuration of playback channels": [
+            4,
+            {
+              "Monaural": "m",
+              "Quadraphonic, multichannel, or surround": "q",
+              "Stereophonic": "s",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Groove width/groove pitch": [
+            5,
+            {
+              "Microgroove/fine": "m",
+              "Not applicable": "n",
+              "Coarse/standard": "s",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Dimensions": [
+            6,
+            {
+              "3 in.": "a",
+              "5 in.": "b",
+              "7 in.": "c",
+              "10 in.": "d",
+              "12 in.": "e",
+              "16 in.": "f",
+              "4 3/4 in. or 12 cm.": "g",
+              "3 7/8 x 2 1/2 in.": "j",
+              "5 1/4 x 3 7/8 in.": "o",
+              "Not applicable": "n",
+              "2 3/4 x 4 in.": "s",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Tape width": [
+            7,
+            {
+              "1/8 in.": "l",
+              "1/4 in.": "m",
+              "Not applicable": "n",
+              "1/2 in.": "o",
+              "1 in.": "p",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Tape configuration": [
+            8,
+            {
+              "Full (1) track": "a",
+              "Half (2) track": "b",
+              "Quarter (4) track": "c",
+              "Eight track": "d",
+              "Twelve track": "e",
+              "Sixteen track": "f",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Kind of disc, cylinder or tape": [
+            9,
+            {
+              "Master tape": "a",
+              "Tape duplication master": "b",
+              "Disc master (negative)": "d",
+              "Instantaneous (recorded on the spot)": "i",
+              "Mass produced": "m",
+              "Not applicable": "n",
+              "Mother (positive)": "r",
+              "Stamper (negative)": "s",
+              "Test pressing": "t",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Kind of material": [
+            10,
+            {
+              "Lacquer coating": "a",
+              "Cellulose nitrate": "b",
+              "Acetate tape with ferrous oxide": "c",
+              "Glass with lacquer": "g",
+              "Aluminum with lacquer": "i",
+              "Paper with lacquer or ferrous oxide": "r",
+              "Metal": "l",
+              "Plastic with metal": "m",
+              "Not applicable": "n",
+              "Plastic": "p",
+              "Shellac": "s",
+              "Unknown": "u",
+              "Wax": "w",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Kind of cutting": [
+            11,
+            {
+              "Hill-and-dale cutting": "h",
+              "Lateral or combined cutting": "l",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "No attempt to code": "|"
+            }
+          ],
+          "Special playback characteristics": [
+            12,
+            {
+              "NAB standard": "a",
+              "CCIR standard": "b",
+              "Dolby-B encoded": "c",
+              "dbx encoded": "d",
+              "Digital recording": "e",
+              "Dolby-A encoded": "f",
+              "Dolby-C encoded": "g",
+              "CX encoded": "h",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Capture and storage technique": [
+            13,
+            {
+              "Acoustical capture, direct storage": "a",
+              "Direct storage, not acoustical": "b",
+              "Digital storage": "d",
+              "Analog electrical storage": "e",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$TEXT": {
+          "Specific material designation": [
+            1,
+            {
+              "Videocartridge": "c",
+              "Videodisc": "d",
+              "Videocassette": "f",
+              "Videoreel": "r",
+              "Unspecified": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Color": [
+            3,
+            {
+              "One color": "a",
+              "Black-and-white": "b",
+              "Multicolored": "c",
+              "Mixed": "m",
+              "Not applicable": "n",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Videorecording format": [
+            4,
+            {
+              "Beta (1/2 in., videocassette)": "a",
+              "VHS (1/2 in., videocassette)": "b",
+              "U-matic (3/4 in., videocassette)": "c",
+              "EIAJ (1/2 in. reel)": "d",
+              "Type C (1 in., reel)": "e",
+              "Quadruplex (1 in. or 2 in., reel)": "f",
+              "Laserdisc": "g",
+              "CED (Capacitance Electronic Disc) videodisc": "h",
+              "Betacam (1/2 in., videocassette)": "i",
+              "Betacam SP (1/2 in., videocassette)": "j",
+              "Super-VHS (1/2 in., videocassette)": "k",
+              "M-II (1/2 in., videocassette)": "m",
+              "D-2 (3/4 in., videocassette)": "o",
+              "8 mm.": "p",
+              "Hi-8 mm.": "q",
+              "Blu-ray disc": "s",
+              "Unknown": "u",
+              "DVD": "v",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Sound on medium or separate": [
+            5,
+            {
+              "No sound (silent)": "#",
+              "Sound on medium": "a",
+              "Sound separate from medium": "b",
+              "Unknown": "u"
+            }
+          ],
+          "Medium for sound": [
+            6,
+            {
+              "No sound (silent)": "#",
+              "Optical sound track on motion picture film": "a",
+              "Magnetic sound track on motion picture film": "b",
+              "Magnetic audio tape in cartridge": "c",
+              "Sound disc": "d",
+              "Magnetic audio tape on reel": "e",
+              "Magnetic audio tape in cassette": "f",
+              "Optical and magnetic sound track on motion picture film": "g",
+              "Videotape": "h",
+              "Videodisc": "i",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Dimensions": [
+            7,
+            {
+              "8 mm.": "a",
+              "1/4 in.": "m",
+              "1/2 in.": "o",
+              "1 in.": "p",
+              "2 in.": "q",
+              "3/4 in.": "r",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ],
+          "Configuration of playback channels": [
+            8,
+            {
+              "Mixed": "k",
+              "Monaural": "m",
+              "Not applicable": "n",
+              "Quadraphonic, multichannel, or surround": "q",
+              "Stereophonic": "s",
+              "Unknown": "u",
+              "Other": "z",
+              "No attempt to code": "|"
+            }
+          ]
+        },
+        "$UNSPECIFIED": {
+          "Specific material designation": [
+            1,
+            {
+              "Multiple physical forms": "m"
             }
           ]
         },
