@@ -1,5 +1,6 @@
 import lodash from 'lodash';
 import GetFormattedValue from './get-formatted-value'
+const CODE_VALUE_REGEX = /{.*}/g;
 export default class ParseFieldValue {
     constructor(context, marcFormat, callback) {
         const rootNode = new ParseNode(null, null);
@@ -47,6 +48,7 @@ class ParseNode {
     constructor(parent, key) {
         this.children = [];
         if (parent) {
+            this.format = parent.format;
             parent.children.push(this);
         }
         this.parent = parent;
@@ -67,7 +69,7 @@ class ParseNode {
 
     getRoot() {
         let rootKey;
-        if (this.parent) {
+        if (this.parent && this.parent.key !== null) {
             rootKey = this.parent.getRoot();
         } else {
             rootKey = this.key;
@@ -76,17 +78,61 @@ class ParseNode {
     }
 
     getFormat() {
-        let newFormat = this.format;
+        const rootKey = this.getRoot();
+        const mainFormat = this.format[rootKey.toLowerCase()];
         let parent = this.parent;
-        const parentList = [];
-        while (parent && parent.key) {
-            parentList.push(parent.key);
+        let format = mainFormat;
+        let fieldFormat = undefined;
+        while (parent && parent.key !== rootKey) {
+            lodash.filter(format, (valueF)=> {
+                let found = false;
+                if (valueF instanceof Array) {
+                    found = valueF[0] === parent.key;
+                }
+                else {
+                    found = valueF === parent.key || valueF.indexOf(parent.key) > -1;
+                }
+                if (found) {
+                    format = valueF;
+                    return found;
+                }
+            });
             parent = parent.getParent();
         }
-        for (let i = parentList.length; i > 0; i--) {
-            newFormat = newFormat[parentList[i]];
+        lodash.filter(format, (valueF, field)=> {
+            let found = false;
+            if (valueF instanceof Array) {
+                found = valueF[0] === this.key;
+            }
+            else {
+                found = valueF === this.key || valueF.indexOf(this.key) > -1;
+            }
+            if (found) {
+                fieldFormat = field;
+                format = valueF;
+                return found;
+            }
+        });
+        return {
+            field: fieldFormat,
+            config: format
+        };
+    }
+
+    getFormattedValue() {
+        const {config, field} = this.getFormat();
+        const objF = {};
+        let formattedValue;
+        if (config instanceof Object) {
+            console.log('config', config);
+        } else if (CODE_VALUE_REGEX.test(config)) {
+
+        } else {
+            formattedValue = this.value;
         }
-        return newFormat;
+        objF[field] = formattedValue;
+        return objF;
+
     }
 
     getParent() {
@@ -94,3 +140,8 @@ class ParseNode {
     }
 
 }
+
+class ParseNodeValue {
+
+}
+

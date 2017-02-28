@@ -71,10 +71,13 @@ const sampleMarcData = {
 describe('should decode marc', () => {
     it('parse marc', (done) => {
         new MarcDecoder(sampleMarcData, (err, result)=> {
-            const child = result.children[2];
+            const children = result.children[1].getChildren();
+            let child = children[0];
+            expect(child.getFormattedValue()['CONTROL NUMBER']).to.be.equal('355557');
+            child = children[1];
+            expect(child.getFormattedValue()['DATE AND TIME OF LATEST TRANSACTION']).to.be.equal('20010103140233.0');
+            child = children[2];
             console.log('child', child);
-            const format = child.getFormat();
-            console.log('format', format);
             done();
         });
     });
