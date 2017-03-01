@@ -124,7 +124,15 @@ class ParseNode {
         const objF = {};
         let formattedValue;
         if (config instanceof Object) {
-            console.log('config', config);
+            if (config instanceof Array) {
+                let newFormat = config[1];
+                if (this.value) {
+                    let valueArray = this.value.split('');
+                    if (valueArray && valueArray.length) {
+                    }
+                }
+            } else {
+            }
         } else if (CODE_VALUE_REGEX.test(config)) {
 
         } else {

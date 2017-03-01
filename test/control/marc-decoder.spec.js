@@ -77,7 +77,7 @@ describe('should decode marc', () => {
             child = children[1];
             expect(child.getFormattedValue()['DATE AND TIME OF LATEST TRANSACTION']).to.be.equal('20010103140233.0');
             child = children[2];
-            console.log('child', child);
+            console.log('child', child.getFormattedValue());
             done();
         });
     });
