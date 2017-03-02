@@ -78,13 +78,12 @@ describe('should decode marc', () => {
             expect(child.getFormattedValue()['DATE AND TIME OF LATEST TRANSACTION']).to.be.equal('20010103140233.0');
             children = result.children[2].getChildren();
             child = children[0];
-            let children2 = child.children[0];
-            if(children2){
-                for(let parseNode in children2){
-                    console.log('node--->', children2[parseNode]);
+            let children2 = child.children;
+            if (children2) {
+                for (let i = 0; i < children2.length; i++) {
+                    console.log('node--->', children2[i].getFormattedValue());
                 }
             }
-
             done();
         });
     });

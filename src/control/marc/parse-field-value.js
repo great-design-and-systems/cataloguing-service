@@ -26,6 +26,7 @@ export default class ParseFieldValue {
                     this.parseKeys(contextKeys, contextValue, parseNodeValue);
                 }
             } else {
+                //TODO: Check for the corrent value
                 parseNodeValue.setValue(contextValue);
             }
         }
@@ -89,6 +90,7 @@ class ParseNode {
                 let found = false;
                 if (valueF instanceof Array) {
                     found = valueF[0] === parent.key;
+                } else if (valueF instanceof Object) {
                 } else {
                     found = valueF === parent.key || valueF.indexOf(parent.key) > -1;
                 }
@@ -101,10 +103,13 @@ class ParseNode {
         }
         lodash.filter(format, (valueF, field) => {
             let found = false;
-            if (valueF instanceof Array) {
-                found = valueF[0] === this.key;
-            } else {
-                found = valueF === this.key || valueF.indexOf(this.key) > -1;
+            if (valueF) {
+                if (valueF instanceof Array) {
+                    found = valueF[0] === this.key;
+                } else if (valueF instanceof Object) {
+                } else {
+                    found = valueF === this.key || valueF.indexOf(this.key) > -1;
+                }
             }
             if (found) {
                 fieldFormat = field;
@@ -128,8 +133,6 @@ class ParseNode {
         if (config instanceof Object) {
             if (config instanceof Array) {
                 let newFormat = config[1];
-                console.log('config', config);
-                console.log('field', field);
                 if (this.value) {
                     let group;
                     let label;
@@ -146,6 +149,14 @@ class ParseNode {
                         }
                         if (formatV instanceof Array) {
                             formattedValue = parseArrayFieldObject(formatV, this.value);
+                        } else if (CODE_VALUE_REGEX.test(formatV)) {
+                            console.log('reg',  formatV);
+                            console.log('this.value',  this.value);
+                            if (label) {
+                                formattedValue[label][formatF] = this.value;
+                            } else {
+                                formattedValue[formatF] = this.value;
+                            }
                         } else if (formatV instanceof Object) {
                             lodash.forIn(formatV, (_formatV, _formatF) => {
                                 const value = parseArrayFieldObject(_formatV, this.value);
@@ -157,12 +168,6 @@ class ParseNode {
                                     }
                                 }
                             });
-                        } else if (CODE_VALUE_REGEX.test(formatV)) {
-                            if (label) {
-                                formattedValue[label] = this.value;
-                            } else {
-                                formattedValue[formatF] = this.value;
-                            }
                         }
                     });
                     if (group) {
