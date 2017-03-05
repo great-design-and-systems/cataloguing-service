@@ -72,7 +72,7 @@ export default class CatalogService {
                         })
                     }
                 ];
-
+                //TODO: save subjects
                 sequence(actions, (err, result)=> {
                     callback(err, result);
                 });
