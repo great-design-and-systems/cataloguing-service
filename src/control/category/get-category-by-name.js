@@ -5,7 +5,6 @@ export default class GetCategoryByName {
             name: categoryName
         }, (err, category) => {
             if (err || !category) {
-                global.gdsLogger.logError(err);
                 callback({
                     message: 'Failed getting category'
                 });
