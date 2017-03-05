@@ -5,8 +5,7 @@ import GetControlNumberFromMarc from '../control/catalog/get-control-number-from
 import GetTitleStatementFromMarc from '../control/catalog/get-title-statement-from-marc';
 import GetCategoryByName from '../control/category/get-category-by-name';
 import CreateCategory from '../control/category/create-category';
-
-import batch from 'batchflow';
+import {sequence} from '../control/catalog-utils';
 export default class CatalogService {
     constructor(dynamicTable) {
         this.dynamicTable = dynamicTable;
@@ -18,47 +17,65 @@ export default class CatalogService {
                 callback(err);
             } else {
                 const category = new GetCategoryFromMarc(decodedMarc).getCategory();
-                const batchActions = [
-                    {
-                        action: (data, callback)=> {
-                            new GetCategoryByName(category, (err, categoryData)=> {
-                                if (err) {
-                                    callback();
-                                } else {
-                                    callback(categoryData);
-                                }
-                            });
-                        }
-                    },
-                    {
-                        action: (data, callback)=> {
-                            console.log('data', data);
-                            if (data) {
-                                callback(data);
+                const controlNumber = new GetControlNumberFromMarc(decodedMarc).getControlNumber();
+                const titleStatement = new GetTitleStatementFromMarc(decodedMarc).getTitleStatement();
+                const actions = [
+                    (data, next)=> {
+                        new GetCategoryByName(category, (err, categoryData)=> {
+                            if (err) {
+                                next();
                             } else {
-                                new CreateCategory({name: category}, (err, categoryData)=> {
-                                    if (err) {
-                                        throw err;
-                                    } else {
-                                        callback(categoryData);
-                                    }
-                                });
+                                next(undefined, categoryData);
                             }
-
+                        })
+                    }, (data, next)=> {
+                        if (data) {
+                            next(undefined, data);
+                        } else {
+                            new CreateCategory({
+                                name: category
+                            }, (err, categoryData)=> {
+                                if (err) {
+                                    next(err);
+                                } else {
+                                    next(undefined, categoryData);
+                                }
+                            })
                         }
+                    }, (data, next)=> {
+                        new CreateItem({
+                            category: data._id,
+                            categoryName: data.name,
+                            title: titleStatement.title,
+                            remainderOfTitle: titleStatement.remainderOfTitle,
+                            controlNumber: controlNumber
+                        }, (err, item)=> {
+                            if (err) {
+                                next(err);
+                            } else {
+                                next(undefined, item);
+                            }
+                        });
+                    }, (data, next)=> {
+                        this.dynamicTable.createItemCategory({
+                            category: category,
+                            content: {
+                                itemId: data._id,
+                                raw: marcData
+                            }
+                        }, (err)=> {
+                            if (err) {
+                                next(err);
+                            } else {
+                                next(undefined, data);
+                            }
+                        })
                     }
                 ];
 
-                batch(batchActions).sequential()
-                    .each(function (i, item, next) {
-                        console.log('item', item);
-                        console.log('seq', this);
-                        next('sample');
-                    });
-
-                const controlnumber = new GetControlNumberFromMarc(decodedMarc).getControlNumber();
-                const titleStatement = new GetTitleStatementFromMarc(decodedMarc).getTitleStatement();
-                callback();
+                sequence(actions, (err, result)=> {
+                    callback(err, result);
+                });
             }
         });
     }

@@ -1,16 +1,20 @@
 import ItemModel from '../../entity/item';
 
 export default class CreateItem {
+
     constructor(data, callback) {
         ItemModel.create({
-            name: data.name,
             description: data.description,
             category: data.category,
             categoryName: data.categoryName,
-            code: data.code,
-            imageId: data.imageId
+            barcode: data.barcode,
+            imageId: data.imageId,
+            controlNumber: data.controlNumber,
+            remainderOfTitle: data.remainderOfTitle,
+            title: data.title
         }, (err, result) => {
             if (err) {
+                console.log('err', err);
                 callback({
                     message: 'Failed saving item'
                 });

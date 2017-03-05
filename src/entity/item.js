@@ -3,8 +3,7 @@ import mongoosePaginate from 'mongoose-paginate';
 
 const ItemSchema = mongoose.Schema({
     imageId: {
-        type: String,
-        required: [true, 'Item imageId is required.']
+        type: String
     },
     description: String,
     category: {
@@ -18,7 +17,7 @@ const ItemSchema = mongoose.Schema({
     },
     title: String,
     remainderOfTitle: String,
-    controlNumber: String,
+    controlNumber: {type: String, unique: true},
     barcode: String
 });
 ItemSchema.plugin(mongoosePaginate);
