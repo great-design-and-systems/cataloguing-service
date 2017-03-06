@@ -5,81 +5,16 @@ import path from 'path';
 import GetMarcFormat from '../../src/control/marc/get-marc-format';
 import ParseFieldValue from '../../src/control/marc/parse-field-value';
 import {findInArray} from '../../src/control/catalog-utils';
-const sampleMarcData = {
-    "position": "2",
-    "leader": "01073cam a2200277 p 4500",
-    "controlField": {
-        "001": "355557",
-        "005": "20010103140233.0",
-        "008": "770117s1976    be a     c    000 0 fre"
-    },
-    "dataField": {
-        "245": {
-            "a": "10 artistes, 200 bijoux :",
-            "b": "exposition au Passage 44 à Bruxelles, du 6 mars au 5 avril 1976 = 10 artiesten, 200 juwelen : tentoonstelling in Passage 44 te Brussel, van 6 maart tot 5 april 1976.",
-            "c": "sample"
-        },
-        "246": {},
-        "260": {
-            "a": "[Bruxelles] :",
-            "b": "Crédit communal de Belgique,",
-            "c": "[1976]"
-        },
-        "300": {
-            "a": "[46] p. :",
-            "b": "ill. ;",
-            "c": "21 cm."
-        },
-        "500": {},
-        "650": {
-            "a": "Jewelry",
-            "x": "Exhibitions.",
-            "y": "20th century",
-            "z": "Belgium"
-        },
-        "710": {},
-        "740": {},
-        "906": {
-            "a": "7",
-            "b": "cbc",
-            "c": "orignew",
-            "d": "3",
-            "e": "ncip",
-            "f": "19",
-            "g": "y-gencatlg"
-        },
-        "991": {
-            "b": "c-GenColl",
-            "h": "NK7355.A1",
-            "i": "D59",
-            "t": "Copy 1",
-            "w": "BOOKS"
-        },
-        "035": {},
-        "010": {},
-        "015": {},
-        "040": {
-            "a": "DLC",
-            "c": "DLC",
-            "d": "DLC"
-        },
-        "041": {},
-        "043": {},
-        "050": {
-            "a": "NK7355.A1",
-            "b": "D59"
-        }
-    }
-};
+import {SampleMarcData,MarcDataWithMultipleDataFields} from './data/parse-marc.data';
 //TODO: 245
 describe('Generating ParseNodes', () => {
 
     it('should parse controlfield top level node', (done) => {
         new GetMarcFormat((err, marcFormat) => {
             const context = {
-                leader: sampleMarcData.leader,
-                controlField: sampleMarcData.controlField,
-                dataField: sampleMarcData.dataField
+                leader: SampleMarcData.leader,
+                controlField: SampleMarcData.controlField,
+                dataField: SampleMarcData.dataField
             };
             new ParseFieldValue(context, marcFormat, (err, result) => {
                 let controlField = result.getChildren()[1];
@@ -92,21 +27,20 @@ describe('Generating ParseNodes', () => {
             });
         });
     });
-
     it('should parse controlfield multi-level node', (done) => {
         //008
         new GetMarcFormat((err, marcFormat) => {
 
             const context = {
-                leader: sampleMarcData.leader,
-                controlField: sampleMarcData.controlField,
-                dataField: sampleMarcData.dataField
+                leader: SampleMarcData.leader,
+                controlField: SampleMarcData.controlField,
+                dataField: SampleMarcData.dataField
             };
 
             new ParseFieldValue(context, marcFormat, (err, result) => {
                 let children = result.children[1].getChildren();
                 let _008 = children[2];
-                expect(_008.getValue()).to.be.equal(sampleMarcData.controlField['008']);
+                expect(_008.getValue()).to.be.equal(SampleMarcData.controlField['008']);
                 const decodedValue = _008.getDecodedValue()['DATA ELEMENTS'];
                 expect(decodedValue).to.not.be.undefined;
                 expect(decodedValue.instance).to.not.be.undefined;
@@ -125,13 +59,12 @@ describe('Generating ParseNodes', () => {
             });
         });
     });
-
     it('should parse datafield', (done) => {
         new GetMarcFormat((err, marcFormat) => {
             const context = {
-                leader: sampleMarcData.leader,
-                controlField: sampleMarcData.controlField,
-                dataField: sampleMarcData.dataField
+                leader: SampleMarcData.leader,
+                controlField: SampleMarcData.controlField,
+                dataField: SampleMarcData.dataField
             };
             new ParseFieldValue(context, marcFormat, (err, result) => {
                 let children = result.children[2].getChildren();
@@ -144,13 +77,13 @@ describe('Generating ParseNodes', () => {
                         const key = chd.getKey();
                         switch (key) {
                             case 'a':
-                                expect(formattedValue.Title).to.be.equal(sampleMarcData.dataField['245'].a);
+                                expect(formattedValue.Title).to.be.equal(SampleMarcData.dataField['245'].a);
                                 break;
                             case 'b':
-                                expect(formattedValue['Remainder of title']).to.be.equal(sampleMarcData.dataField['245'].b);
+                                expect(formattedValue['Remainder of title']).to.be.equal(SampleMarcData.dataField['245'].b);
                                 break;
                             case 'c':
-                                expect(formattedValue['Statement of responsibility, etc']).to.be.equal(sampleMarcData.dataField['245'].c);
+                                expect(formattedValue['Statement of responsibility, etc']).to.be.equal(SampleMarcData.dataField['245'].c);
                                 break;
                         }
                     }
@@ -162,9 +95,9 @@ describe('Generating ParseNodes', () => {
     it('should parse subject', (done)=> {
         new GetMarcFormat((err, marcFormat) => {
             const context = {
-                leader: sampleMarcData.leader,
-                controlField: sampleMarcData.controlField,
-                dataField: sampleMarcData.dataField
+                leader: SampleMarcData.leader,
+                controlField: SampleMarcData.controlField,
+                dataField: SampleMarcData.dataField
             };
             new ParseFieldValue(context, marcFormat, (err, result) => {
                 let children = result.children[2].getChildren();
@@ -172,9 +105,28 @@ describe('Generating ParseNodes', () => {
                 const _650Children = _650.getChildren();
                 const a = findInArray('key', 'a', _650Children);
                 expect(a.getDecodedValue()['Topical term or geographic name as entry element']).to.not.be.undefined;
-                expect(a.getDecodedValue()['Topical term or geographic name as entry element']).to.be.equal(sampleMarcData.dataField['650'].a);
+                expect(a.getDecodedValue()['Topical term or geographic name as entry element']).to.be.equal(SampleMarcData.dataField['650'].a);
                 done();
             });
         });
     });
+    it('should parse multiple data fields', (done)=> {
+        new GetMarcFormat((err, marcFormat) => {
+            const context = {
+                leader: MarcDataWithMultipleDataFields.leader,
+                controlField: MarcDataWithMultipleDataFields.controlField,
+                dataField: MarcDataWithMultipleDataFields.dataField
+            };
+            new ParseFieldValue(context, marcFormat, (err, result) => {
+                let children = result.children[2].getChildren();
+                const _650 = findInArray('key', '650', children);
+                expect(_650.getChildren().length).to.be.equal(3);
+                const _1st = _650.getChildren()[0];
+                expect(_1st.getChildren()[0].getDecodedValue()['Topical term or geographic name as entry element']).to.be.equal('Illustrated periodicals');
+                expect(_1st.getChildren()[1].getDecodedValue()['Geographic subdivision']).to.be.equal('Belgium');
+                expect(_1st.getChildren()[2].getDecodedValue()['General subdivision']).to.be.equal('Exhibitions.');
+                done();
+            });
+        });
+    })
 });

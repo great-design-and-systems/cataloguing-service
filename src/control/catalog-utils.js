@@ -42,3 +42,33 @@ export function sequence(array, callback, data) {
         callback(err);
     }
 }
+export function sequenceItem(array, action, callback, data) {
+    const item = array.shift();
+    try {
+        if (array.length > 0) {
+            action(item, data, (err, returnData)=> {
+                if (err) {
+                    callback(err);
+                } else {
+                    sequenceItem(array, action, callback, returnData);
+                }
+            });
+        } else {
+            action(item, data, callback, (err, returnData)=> {
+                if (err) {
+                    callback(err);
+                } else {
+                    callback(undefined, returnData);
+                }
+            });
+        }
+    } catch (err) {
+        callback(err);
+    }
+}
+
+export function hasOwnProperty(obj, prop) {
+    var proto = obj.__proto__ || obj.constructor.prototype;
+    return (prop in obj) &&
+        (!(prop in proto) || proto[prop] !== obj[prop]);
+}

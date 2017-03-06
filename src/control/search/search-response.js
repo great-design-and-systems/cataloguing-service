@@ -1,3 +1,5 @@
+import lodash from 'lodash';
+import {hasOwnProperty} from '../catalog-utils';
 export default class SearchResponse {
     constructor(response) {
         this.totalRecords = 0;
@@ -38,7 +40,22 @@ class CatalogResponseItem {
         if (record.datafield) {
             for (let i = 0; i < record.datafield.length; i++) {
                 let field = record.datafield[i];
-                this.dataField[field['_tag']] = parseFields(field.subfield, '_code', '__text');
+                const tag = field['_tag'];
+
+                if (hasOwnProperty(this.dataField, tag)) {
+                    let dataFieldArr = [];
+                    if (!(this.dataField[tag] instanceof Array)) {
+                        const dFCopy = lodash.clone(this.dataField);
+                        const firstEntry = dFCopy[tag];
+                        dataFieldArr.push(firstEntry);
+                        this.dataField[tag] = dataFieldArr;
+                    } else {
+                        dataFieldArr = this.dataField[tag];
+                    }
+                    dataFieldArr.push(parseFields(field.subfield, '_code', '__text'));
+                } else {
+                    this.dataField[tag] = parseFields(field.subfield, '_code', '__text');
+                }
             }
         }
     }
@@ -46,9 +63,13 @@ class CatalogResponseItem {
 
 function parseFields(fields, keyField, valueField) {
     const fieldObject = {};
-    for (let index = 0; index < fields.length; index++) {
-        let field = fields[index];
-        fieldObject[field[keyField]] = field[valueField];
+    if (fields.length) {
+        for (let index = 0; index < fields.length; index++) {
+            let field = fields[index];
+            fieldObject[field[keyField]] = field[valueField];
+        }
+    } else {
+        fieldObject[fields[keyField]] = fields[valueField];
     }
     return fieldObject;
 }
