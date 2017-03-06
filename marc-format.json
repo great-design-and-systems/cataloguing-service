@@ -17,9 +17,9 @@
     "Type of Record": [
       6,
       {
-        "Language material": "a",
+        "Books": "a",
         "Archival and manuscripts control [OBSOLETE]": "b",
-        "Notated music": "c",
+        "Printed Music": "c",
         "Manuscript notated music": "d",
         "Cartographic material": "e",
         "Manuscript cartographic material": "f",

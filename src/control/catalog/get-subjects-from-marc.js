@@ -4,6 +4,7 @@ export default class GetSubjectsFromMarc {
     constructor(rootNode) {
         const dataField = findInArray('key', 'dataField', rootNode.getChildren());
         const subjectFields = findInArray('key', '650', dataField.getChildren());
+        //TODO: add support for 600, 610, 611, 630, 648, 650, 651, 653, 654, 655, 656, 657, 658 or 690 just SWITCH it!
         sequenceItem(subjectFields.getChildren(), (item, data, next)=> {
             let obj = data || {};
             try {

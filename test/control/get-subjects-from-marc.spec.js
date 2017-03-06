@@ -13,7 +13,6 @@ describe('Get Subjects from MARC', ()=> {
     it('should get subjects from multile data fields', (done)=> {
         new MarcDecoder(MarcDataWithMultipleDataFields, (err, nodeResult)=> {
             const subject = new GetSubjectsFromMarc(nodeResult).getSubjects();
-            console.log('subject', subject);
             done();
         });
     });
