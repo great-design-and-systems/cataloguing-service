@@ -25,6 +25,16 @@ export const MarcDataWithMultipleDataFields = {
         "504": {
             "a": "Bibliography: p. [120]-[121]"
         },
+        "610": {
+            "a": "610 a"
+        },
+        "630": {
+            "a": "630 a"
+        },
+        "647": [
+            {"a": "647 a1"},
+            {"a": "647 a 2"}
+        ],
         "650": [
             {
                 "a": "Illustrated periodicals",
