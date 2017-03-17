@@ -11,9 +11,11 @@ export function findInArray(field, key, list, index) {
         index = 0;
     }
     const obj = list[index];
-    const found = obj[field] === key;
-    if (!found && index < list.length) {
-        return findInArray(field, key, list, ++index);
+    if (obj) {
+        const found = obj[field] === key;
+        if (!found && index < list.length) {
+            return findInArray(field, key, list, ++index);
+        }
     }
     return obj;
 }

@@ -9,6 +9,7 @@ import GetSubjectsFromMarc from '../control/catalog/get-subjects-from-marc';
 import CreateItemSubjectAssociation from '../control/catalog/create-item-subject-association';
 import {sequence, sequenceItem} from '../control/catalog-utils';
 import RemoveItemById from '../control/item/remove-item-by-id';
+import GetItemByControlNumber from '../control/item/get-item-by-control-number';
 
 export default class CatalogService {
     constructor(dynamicTable) {
@@ -22,92 +23,101 @@ export default class CatalogService {
             } else {
                 const category = new GetCategoryFromMarc(decodedMarc).getCategory();
                 const controlNumber = new GetControlNumberFromMarc(decodedMarc).getControlNumber();
-                const titleStatement = new GetTitleStatementFromMarc(decodedMarc).getTitleStatement();
-                const subjects = new GetSubjectsFromMarc(decodedMarc).getSubjects();
-                const actions = [
-                    (data, next)=> {
-                        new GetCategoryByName(category, (err, categoryData)=> {
-                            if (err) {
-                                next();
-                            } else {
-                                next(undefined, categoryData);
-                            }
-                        })
-                    }, (data, next)=> {
-                        if (data) {
-                            next(undefined, data);
-                        } else {
-                            new CreateCategory({
-                                name: category
-                            }, (err, categoryData)=> {
-                                if (err) {
-                                    next(err);
+                new GetItemByControlNumber(controlNumber, (nonExisting, existingItem)=> {
+                    if (nonExisting) {
+                        const titleStatement = new GetTitleStatementFromMarc(decodedMarc).getTitleStatement();
+                        const subjects = new GetSubjectsFromMarc(decodedMarc).getSubjects();
+                        const actions = [
+                            (data, next)=> {
+                                new GetCategoryByName(category, (err, categoryData)=> {
+                                    if (err) {
+                                        next();
+                                    } else {
+                                        next(undefined, categoryData);
+                                    }
+                                })
+                            }, (data, next)=> {
+                                if (data) {
+                                    next(undefined, data);
                                 } else {
-                                    next(undefined, categoryData);
+                                    new CreateCategory({
+                                        name: category
+                                    }, (err, categoryData)=> {
+                                        if (err) {
+                                            next(err);
+                                        } else {
+                                            next(undefined, categoryData);
+                                        }
+                                    })
                                 }
-                            })
-                        }
-                    }, (data, next)=> {
-                        new CreateItem({
-                            category: data._id,
-                            categoryName: data.name,
-                            title: titleStatement.title,
-                            remainderOfTitle: titleStatement.remainderOfTitle,
-                            controlNumber: controlNumber
-                        }, (err, item)=> {
+                            }, (data, next)=> {
+                                new CreateItem({
+                                    category: data._id,
+                                    categoryName: data.name,
+                                    title: titleStatement.title,
+                                    remainderOfTitle: titleStatement.remainderOfTitle,
+                                    controlNumber: controlNumber
+                                }, (err, item)=> {
+                                    if (err) {
+                                        next(err);
+                                    } else {
+                                        next(undefined, item);
+                                    }
+                                });
+                            }, (data, next)=> {
+                                this.dynamicTable.createItemCategory({
+                                    category: category,
+                                    content: {
+                                        itemId: data._id,
+                                        raw: marcData
+                                    }
+                                }, (err)=> {
+                                    if (err) {
+                                        next(err);
+                                    } else {
+                                        next(undefined, data);
+                                    }
+                                })
+                            }
+                        ];
+                        //TODO: save subjects
+                        sequence(actions, (err, result)=> {
                             if (err) {
-                                next(err);
+                                if (result) {
+                                    this.dynamicTable.removeItemCategory({
+                                        category: category,
+                                        query: {
+                                            itemId: result._id
+                                        }
+                                    }, ()=> {
+                                        new RemoveItemById(result._id, ()=> {
+                                            callback(err);
+                                        });
+                                    });
+                                }
                             } else {
-                                next(undefined, item);
+                                new CreateItemSubjectAssociation(subjects, result.id, (errSub)=> {
+                                    if (errSub) {
+                                        this.dynamicTable.removeItemCategory({
+                                            category: category,
+                                            query: {
+                                                itemId: result._id
+                                            }
+                                        }, ()=> {
+                                            new RemoveItemById(result._id, ()=> {
+                                                callback(errSub);
+                                            });
+                                        });
+                                    } else {
+                                        callback(undefined, result);
+                                    }
+                                });
                             }
                         });
-                    }, (data, next)=> {
-                        this.dynamicTable.createItemCategory({
-                            category: category,
-                            content: {
-                                itemId: data._id,
-                                raw: marcData
-                            }
-                        }, (err)=> {
-                            if (err) {
-                                next(err);
-                            } else {
-                                next(undefined, data);
-                            }
-                        })
                     }
-                ];
-                //TODO: save subjects
-                sequence(actions, (err, result)=> {
-                    if (err) {
-                        if (result) {
-                            this.dynamicTable.removeItemCategory({
-                                category: category,
-                                query: {
-                                    itemId: result._id
-                                }
-                            }, ()=> {
-                                new RemoveItemById(result._id, ()=> {
-                                    callback(err);
-                                });
-                            });
-                        }
-                    } else {
-                        new CreateItemSubjectAssociation(subjects, result.id, (errSub)=> {
-                            if (errSub) {
-                                this.dynamicTable.removeItemCategory({
-                                    category: category,
-                                    query: {
-                                        itemId: result._id
-                                    }
-                                }, ()=> {
-                                    new RemoveItemById(result._id, ()=> {
-                                        callback(errSub);
-                                    });
-                                });
-                            } else {
-                                callback(undefined, result);
-                            }
+                    else {
+                        callback(undefined, {
+                            existingItem: existingItem
                         });
                     }
                 });
