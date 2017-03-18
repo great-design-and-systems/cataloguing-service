@@ -331,7 +331,7 @@ export default class CataloguingResource {
             });
         });
         app.get(API + 'get-items', (req, res) => {
-            itemService.getItems(new GDSDomainPaginateHelper(req),
+            itemService.getItems(req.query.search, new GDSDomainPaginateHelper(req),
                 (err, result) => {
                     if (err) {
                         res.status(500).send(new GDSDomainDTO('ERROR_MESSAGE',

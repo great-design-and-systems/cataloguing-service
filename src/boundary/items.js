@@ -36,8 +36,8 @@ export default class ItemService {
         });
     }
 
-    getItems(paginate, callback) {
-        new GetItems({}, paginate, callback);
+    getItems(query, paginate, callback) {
+        new GetItems(query ? {title: {$regex: query}} : {}, paginate, callback);
     }
 
     getRecentlyAddedItems(queryParam, paginate, callback) {
