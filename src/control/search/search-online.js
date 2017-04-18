@@ -7,6 +7,8 @@ import X2JS from 'x2js';
 const QUERY_URL_LOC = process.env.QUERY_URL_LOC || 'http://www.loc.gov/z39voy';
 const QUERY_URL_BIBSYS = process.env.QUERY_URL_BIBSYS || 'http://sru.bibsys.no/search/biblio';
 const QUERY_URL_GAPINES = process.env.QUERY_URL_GAPINES || 'http://gapines.org/opac/extras/sru';
+const QUERY_URL_ALMA = process.env.QUERY_URL_ALMA || 'https://na01.alma.exlibrisgroup.com/view/sru/01ALLIANCE_NETWORK';
+
 export default class SearchOnline {
     constructor(query, format, source = 'LIBRARY_OF_CONGRESS', callback) {
         let searchUrl;
@@ -25,6 +27,10 @@ export default class SearchOnline {
             {
                 searchUrl = searchRetrieve(QUERY_URL_GAPINES, query, format);
                 break;
+            }
+            case 'ALMA':
+            {
+                searchUrl = searchRetrieve(QUERY_URL_ALMA, query, format, '1.2'); 
             }
         }
         console.log('searching in ', searchUrl);

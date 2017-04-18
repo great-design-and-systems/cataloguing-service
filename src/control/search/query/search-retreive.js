@@ -1,10 +1,9 @@
-const VERSION = '1.1';
 const OPERATION = 'searchRetrieve';
 const SCHEMA = 'marcxml';
 
 import { objectToQuery } from '../../catalog-utils';
 
-export function searchRetrieve(url, query, format) {
+export function searchRetrieve(url, query, format, version = '1.1') {
     if (query.maximumRecords) {
         query.maximumRecords = parseInt(query.maximumRecords);
     } else {
@@ -12,7 +11,7 @@ export function searchRetrieve(url, query, format) {
     }
     query.recordSchema = SCHEMA;
     query.operation = OPERATION;
-    query.version = VERSION;
+    query.version = version;
     const queryParam = objectToQuery(query);
     return url + queryParam;
 }
